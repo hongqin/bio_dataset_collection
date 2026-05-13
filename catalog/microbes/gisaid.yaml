@@ -1,0 +1,52 @@
+name: GISAID
+short_id: gisaid
+url: https://gisaid.org/
+provider: GISAID Initiative (Munich; Friends of GISAID)
+species:
+  - Influenza A virus
+  - SARS-CoV-2
+  - Respiratory syncytial virus
+  - Mpox virus
+  - Arboviruses (recent expansions)
+taxonomy_ids:
+  - 11320   # Influenza A
+  - 2697049 # SARS-CoV-2
+research_themes:
+  - pathogen_surveillance
+  - viral_genomics
+  - phylogenetics
+  - public_health
+  - outbreak_response
+data_modalities:
+  - viral_genome_sequences
+  - metadata               # collection date, host, location, lineage
+  - phylogenetic_lineages
+access_mode:
+  - registration_required
+  - usage_agreement
+access_details: |
+  Free of charge but identity-gated: users register with verified
+  professional identity and sign the GISAID Database Access Agreement (DAA).
+  Approved users can search, download, and contribute sequences via the web
+  platform; programmatic feed access requires a separate DAA.
+    - Registration: https://gisaid.org/register/
+    - Databases: EpiFlu (influenza), EpiCoV (SARS-CoV-2), EpiRSV, EpiPox,
+      EpiArbo.
+  Use restrictions: data may not be re-shared outside GISAID, and analyses
+  using GISAID data should acknowledge originating and submitting labs.
+  These terms have been criticized for restricting open re-use.
+size: >17M SARS-CoV-2 sequences and millions of influenza sequences (2025)
+last_updated: 2026   # continuously updated
+citation:
+  - https://doi.org/10.1002/gch2.1018       # GISAID Global Challenges 2017
+  - https://doi.org/10.46234/ccdcw2021.255  # EpiCoV Eurosurveillance
+related_resources:
+  - ena
+  - ncbi_genbank
+notes: |
+  Dominant repository for pre-publication viral genomes during outbreaks;
+  many national public-health agencies submit there before (or instead of)
+  GenBank/ENA. Useful for real-time surveillance; restrictive sharing terms
+  are a known caveat — if pure open re-use is required, prefer
+  GenBank/ENA/INSDC mirrors when available.
+last_verified: 2026-05-13

@@ -1,0 +1,44 @@
+name: Global Genome Biodiversity Network (GGBN) + Smithsonian Global Genome Initiative (GGI)
+short_id: ggbn
+url: https://www.ggbn.org/
+provider: GGBN consortium; Smithsonian National Museum of Natural History (GGI lead)
+species:
+  - multi-species     # all of Earth's biodiversity in scope
+research_themes:
+  - biodiversity_genomics
+  - conservation
+  - taxonomy
+  - phylogenomics
+  - environmental_dna
+data_modalities:
+  - biobank_tissue           # physical specimen vouchers
+  - dna_extracts             # tissue + DNA bank inventories
+  - sample_metadata          # collection, locality, taxonomy
+  - sequence_pointers        # links to GenBank/SRA accessions when sequenced
+access_mode:
+  - public_open
+  - usage_agreement          # MTA for physical samples
+access_details: |
+  Sample-and-metadata DIRECTORY rather than a sequence archive.
+    - GGBN Data Portal: https://www.ggbn.org/ggbn_portal/
+    - GGI program at NMNH: https://naturalhistory.si.edu/research/global-genome-initiative
+    - Sample metadata is publicly searchable and downloadable.
+    - Physical samples require a Material Transfer Agreement (MTA) with the
+      holding institution; terms vary by member biorepository (~100 members
+      across 37 countries).
+    - Sequence data generated from these samples typically lives in
+      GenBank/SRA/ENA under standard INSDC terms.
+size: 3M+ samples across nearly half of all biological families (2021+)
+last_updated: 2026
+citation:
+  - https://doi.org/10.1093/aob/mcw121      # GGBN botanical perspective, Ann Bot 2016
+  - https://doi.org/10.3897/BDJ.1.e1001     # GGBN Data Portal, BDJ 2013
+related_resources:
+  - ena
+  - ncbi_genbank
+notes: |
+  Use this to FIND samples (e.g., "show me extant Nepenthes tissue with
+  high-MW DNA") rather than to download sequences. The Smithsonian GGI
+  biorepository at the Museum Support Center, Suitland MD is one of the
+  largest cryopreserved tissue banks in the world.
+last_verified: 2026-05-13

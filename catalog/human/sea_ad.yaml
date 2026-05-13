@@ -1,0 +1,47 @@
+name: Seattle Alzheimer's Disease Brain Cell Atlas (SEA-AD)
+short_id: sea_ad
+url: https://portal.brain-map.org/explore/seattle-alzheimers-disease
+provider: Allen Institute for Brain Science; UW Medicine; Kaiser Permanente Washington; NIA U19AG060909
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - neurodegeneration
+  - alzheimers_disease
+  - single_cell
+  - functional_genomics
+  - quantitative_neuropathology
+data_modalities:
+  - scrnaseq             # snRNA-seq from MTG, DLPFC
+  - scatac_seq           # snATAC-seq
+  - spatial_transcriptomics  # MERFISH
+  - imaging_histology    # quantitative IHC neuropathology
+  - cell_taxonomy        # mapped to BICAN/SEA-AD cell types
+access_mode:
+  - public_open
+access_details: |
+  Fully open — no application, no IRB.
+    - Allen Brain Map portal:
+      https://portal.brain-map.org/explore/seattle-alzheimers-disease/seattle-alzheimers-disease-brain-cell-atlas-download
+    - AWS Open Data: s3://sea-ad-single-cell-profiling,
+      s3://sea-ad-quantitative-neuropathology,
+      s3://sea-ad-spatial-transcriptomics
+    - CELLxGENE: https://cellxgene.cziscience.com/collections/1ca90a2d-2943-483d-b678-b809bf464c30
+    - AD Knowledge Portal (Synapse syn26223298) for harmonized re-processing
+      across the AD/ADRD community.
+  Note: SEA-AD focuses on cellular/molecular phenotypes — not GWAS
+  genotypes — but is paired with donor metadata (Braak stage, CERAD score,
+  ApoE genotype, age, sex).
+size: ~80 donors across the AD continuum (control → severe), MTG and DLPFC
+last_updated: 2024
+citation:
+  - https://doi.org/10.1038/s41593-024-01774-5   # SEA-AD Nat Neurosci 2024
+related_resources:
+  - cellxgene_census
+notes: |
+  Multi-modal single-cell atlas of Alzheimer's disease in middle temporal
+  gyrus and dorsolateral prefrontal cortex. Donor genotypes are limited to
+  reported AD-relevant alleles (e.g., ApoE) rather than full WGS — use
+  ROSMAP / ADSP for genotype-level analysis.
+last_verified: 2026-05-13

@@ -1,0 +1,48 @@
+name: DOE Joint Genome Institute (JGI) — Data Portal & IMG
+short_id: jgi
+url: https://data.jgi.doe.gov/
+provider: DOE Joint Genome Institute, Lawrence Berkeley National Laboratory
+species:
+  - multi-species
+research_themes:
+  - microbial_genomics
+  - metagenomics
+  - plant_genomics
+  - fungal_genomics
+  - bioenergy
+  - environmental_genomics
+data_modalities:
+  - reference_genomes      # microbial, fungal, plant, algal
+  - metagenomes
+  - metatranscriptomes
+  - single_cell_genomes    # SAGs
+  - assemblies
+  - annotations
+access_mode:
+  - public_open
+  - usage_agreement       # click-through Data Usage Policy
+  - embargoed             # legacy use-restricted projects pre-publication
+access_details: |
+  Public, free, with a click-through Data Usage Policy at first download.
+    - JGI Data Portal (current): https://data.jgi.doe.gov/
+    - IMG/M (microbial + metagenomes): https://img.jgi.doe.gov/
+    - MycoCosm (fungi): https://mycocosm.jgi.doe.gov/
+    - Phytozome (plants): https://phytozome-next.jgi.doe.gov/
+    - Globus and API supported for bulk transfer.
+  Historical "use-restricted" pre-publication policy is being retired —
+  JGI no longer produces use-restricted data in new projects; remaining
+  restrictions expire at publication or set date.
+size: 100k+ genomes/assemblies/metagenomes across microbes, fungi, plants
+last_updated: 2026
+citation:
+  - https://doi.org/10.1093/nar/gkt1069    # JGI Genome Portal NAR 2014
+  - https://doi.org/10.1093/nar/gkae1093   # IMG NAR 2024
+related_resources:
+  - ena
+  - ncbi_genbank
+notes: |
+  Premier US DOE resource for non-human, bioenergy-relevant genomics.
+  Especially strong on environmental microbiomes (soil, marine, biofuel),
+  fungal kingdom (MycoCosm), and plant reference genomes (Phytozome).
+  Phenotypes are mostly metadata about sample environment/source.
+last_verified: 2026-05-13

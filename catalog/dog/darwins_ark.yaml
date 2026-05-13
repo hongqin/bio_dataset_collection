@@ -1,0 +1,44 @@
+name: Darwin's Ark
+short_id: darwins_ark
+url: https://darwinsark.org/
+provider: Broad Institute (Karlsson Lab); University of Massachusetts Chan Medical School
+species:
+  - Canis lupus familiaris
+  - Felis catus
+taxonomy_ids:
+  - 9615
+  - 9685
+research_themes:
+  - canine_genomics
+  - feline_genomics
+  - behavior_genetics
+  - ancestry
+  - companion_animal_health
+data_modalities:
+  - lowpass_wgs           # owner-funded sequencing (Darwin's Dogs / Cats)
+  - genotyping
+  - owner_survey          # extensive behavior + health questionnaires
+  - ancestry_inference
+access_mode:
+  - public_open
+access_details: |
+  Citizen-science platform; participation is free for survey + saliva
+  collection, optional paid sequencing for owners who want individual
+  reports. Aggregate research data are released openly.
+    - Project site: https://darwinsark.org/
+    - Mars-Petcare partnership for sequencing.
+    - Survey data and aggregate genotype-phenotype tables released via
+      project publications and dbVar/SRA for sequencing reads.
+size: ~46,000 dogs and ~14,000 cats enrolled (Karlsson et al. Science 2022)
+last_updated: 2024
+citation:
+  - https://doi.org/10.1126/science.abk0639   # Ancestry-inclusive dog genomics, Science 2022
+related_resources:
+  - dog_aging_project
+notes: |
+  Complementary to the Dog Aging Project: Darwin's Ark emphasizes ancestry,
+  breed-stereotype debunking, and behavior genetics across all-comer
+  companion animals; DAP emphasizes longitudinal aging. Karlsson lab has
+  publicly stated intent for the two cohorts to be integrable into a master
+  dataset for canine genomics.
+last_verified: 2026-05-13

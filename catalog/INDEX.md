@@ -24,6 +24,7 @@ first, then tiered, then controlled.
 | [Pan-UK Biobank](https://pan.ukbb.broadinstitute.org/) | 16,131 GWAS × 6 ancestries × 7,228 phenotypes | multi-ancestry GWAS | [`human/pan_ukbb.yaml`](human/pan_ukbb.yaml) |
 | [Open Targets Platform](https://platform.opentargets.org/) | target–disease evidence, L2G, GWAS coloc (CC0) | drug discovery, variant-to-function | [`human/open_targets.yaml`](human/open_targets.yaml) |
 | [BioBank Japan PheWeb](https://pheweb.jp/) | hundreds of phenotype GWAS in Japanese ancestry | East Asian population genetics, cardiometabolic | [`human/biobank_japan.yaml`](human/biobank_japan.yaml) |
+| [SEA-AD](https://portal.brain-map.org/explore/seattle-alzheimers-disease) | snRNA-seq + snATAC-seq + MERFISH + neuropathology from ~80 AD-continuum brains | single-cell, Alzheimer's disease | [`human/sea_ad.yaml`](human/sea_ad.yaml) |
 
 ### Tiered (public summary + controlled individual-level)
 
@@ -41,6 +42,24 @@ first, then tiered, then controlled.
 | Resource | Access | Themes | File |
 |---|---|---|---|
 | [Dog Aging Project](https://dogagingproject.org/data-access) | DUA + Terra; tiered | geroscience, genomics, microbiome | [`dog/dog_aging_project.yaml`](dog/dog_aging_project.yaml) |
+| [Darwin's Ark](https://darwinsark.org/) | public (citizen science) | ancestry, behavior genetics, companion-animal health | [`dog/darwins_ark.yaml`](dog/darwins_ark.yaml) |
+
+---
+
+## Microbes & viruses
+
+| Resource | Access | Themes | File |
+|---|---|---|---|
+| [GISAID](https://gisaid.org/) | registration + DAA (free, identity-gated) | viral genomics, pathogen surveillance, public health | [`microbes/gisaid.yaml`](microbes/gisaid.yaml) |
+
+---
+
+## Multi-species / comparative
+
+| Resource | Access | Themes | File |
+|---|---|---|---|
+| [DOE JGI](https://data.jgi.doe.gov/) | public, click-through data-use policy | microbial/fungal/plant genomics, metagenomics, bioenergy | [`multi_species/jgi.yaml`](multi_species/jgi.yaml) |
+| [GGBN + Smithsonian GGI](https://www.ggbn.org/) | metadata public; physical samples via MTA | biodiversity genomics, conservation, taxonomy | [`multi_species/ggbn.yaml`](multi_species/ggbn.yaml) |
 
 ---
 
