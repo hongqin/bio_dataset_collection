@@ -1,0 +1,61 @@
+name: PhysioNet
+short_id: physionet
+url: https://physionet.org/
+provider: MIT Laboratory for Computational Physiology; NIH NIBIB
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - biomedical_signal_processing
+  - critical_care
+  - cardiology
+  - neurology
+  - sleep_medicine
+  - movement_disorders
+  - clinical_machine_learning
+data_modalities:
+  - ecg                        # MIT-BIH, PTB-XL, Apnea-ECG, etc.
+  - eeg                        # CHB-MIT, EEGMMIDB, Sleep-EDF, etc.
+  - emg
+  - polysomnography
+  - gait_recordings            # Parkinson's, aging, dystonia
+  - respiratory_signals
+  - blood_pressure_waveforms
+  - clinical_text              # MIMIC modules (linked)
+access_mode:
+  - tiered
+  - public_open               # most legacy "PhysioBank" datasets
+  - controlled_access_dac     # MIMIC + identifiable clinical (CITI + DUA)
+access_details: |
+  Three access categories per dataset:
+    - Open Access: direct download.
+    - Restricted: free, but click-through licence agreement.
+    - Credentialed: CITI "Data or Specimens Only Research" training
+      + DUA (PhysioNet Credentialed Health Data License). Same workflow
+      as [[mimic_iv]] / [[eicu_crd]].
+    - Portal: https://physionet.org/
+    - Datasets are mirrored on AWS Open Data + multiple GCS buckets.
+size: |
+  >150 datasets, >4 TB cumulative biomedical signals. Coverage includes
+  ECG (MIT-BIH Arrhythmia, PTB-XL with 21,837 12-lead ECGs), EEG (CHB-MIT
+  scalp EEG, EEG Motor Movement/Imagery — 109 volunteers, EEG mental
+  arithmetic), sleep (Sleep-EDF Expanded — 197 whole-night PSGs), gait
+  (Gait in Parkinson's Disease, Gait Maturation in Children), and
+  MIMIC-IV satellite modules (MIMIC-CXR, MIMIC-IV-Waveform, MIMIC-IV-Note).
+counts:
+  datasets: 150
+  storage_tb: 4
+last_updated: 2026
+citation:
+  - https://doi.org/10.1161/01.CIR.101.23.e215    # PhysioNet, Circulation 2000
+related_resources:
+  - mimic_iv
+  - eicu_crd
+  - n3c
+  - tuh_eeg
+notes: |
+  De-facto standard for biomedical signal datasets — covers your
+  EEG, gait-in-Parkinson's, and elder-speech use cases in one place.
+  ADReSS-M (multilingual Alzheimer speech) is also distributed here.
+last_verified: 2026-05-13

@@ -1,0 +1,56 @@
+name: DREAM Challenges
+short_id: dream_challenges
+url: https://sagebionetworks.org/community/dreamchallenges
+provider: Sage Bionetworks; international academic + industry partners
+species:
+  - multi-species
+research_themes:
+  - challenge_benchmarks
+  - biomedical_machine_learning
+  - drug_response_prediction
+  - cancer_genomics
+  - single_cell
+  - speech_diagnostics
+  - imaging
+data_modalities:
+  - frozen_challenge_datasets    # training + held-out test
+  - leaderboards
+  - submitted_models             # via Docker / Singularity containers
+  - cross_challenge_metadata
+access_mode:
+  - tiered
+  - public_open                  # most challenge data after closing
+  - registration_required        # Synapse account
+  - usage_agreement              # per-challenge DUA; some "model-to-data"
+access_details: |
+  Each challenge is hosted on Synapse (https://www.synapse.org/). Open-
+  registration phase; participants typically register, agree to Conditions
+  for Use, then download training data. Held-out test data is evaluated
+  on the platform.
+    - Aggregator: https://openchallenges.io/
+    - F1000Research Gateway for published results:
+      https://f1000research.com/gateways/dreamchallenges
+  "Model-to-data" challenges allow sensitive (e.g., clinical) data to
+  stay encrypted while submitted containers run on the organizers' side.
+size: |
+  >60 challenges over 15+ years; >30,000 unique participants worldwide.
+  Notable: Digital Mammography DREAM Challenge (FDA-cleared products),
+  IDG-Drug Kinase Binding, BEAT-PD (uses mPower data), Prostate Cancer
+  outcome prediction, Single-Cell Transcriptomics Imputation, Multiple
+  Myeloma, Coughvid (audio-based TB / COVID diagnosis), etc.
+counts:
+  challenges: 60
+  participants: 30000
+last_updated: 2026     # continuously running
+citation:
+  - https://doi.org/10.1186/s13059-016-1086-x    # DREAM overview, Genome Biology 2016
+related_resources:
+  - grand_challenge
+  - mpower
+  - cellxgene_census
+notes: |
+  Best single source for FROZEN biomedical-ML benchmark datasets that
+  have been independently evaluated. Especially useful when you want a
+  benchmark with a public leaderboard and prior publications. Each
+  challenge has its own Synapse project (e.g., syn8717496 for BEAT-PD).
+last_verified: 2026-05-13

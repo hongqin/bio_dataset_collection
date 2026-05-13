@@ -1,0 +1,56 @@
+name: DementiaBank (incl. Pitt Corpus and ADReSS challenges)
+short_id: dementiabank
+url: https://dementia.talkbank.org/
+provider: TalkBank (Carnegie Mellon University / University of Pittsburgh / international consortium)
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - alzheimers_disease
+  - dementia
+  - speech_processing
+  - language_assessment
+  - clinical_machine_learning
+data_modalities:
+  - audio_recordings           # spontaneous speech, picture description
+  - transcripts                # CHAT format
+  - video                      # some sub-corpora
+  - clinical_metadata          # MMSE, age, education
+  - challenge_subsets          # ADReSS, ADReSSo, ADReSS-M
+access_mode:
+  - registration_required
+  - usage_agreement
+access_details: |
+  Free but membership-gated:
+    1. Register for a TalkBank account.
+    2. Read Ground Rules + email talkbank@cmu.edu with affiliation.
+    3. Students need faculty-advisor sponsorship.
+  Once approved, data downloadable via TalkBank web + CLAN tools.
+  ADReSS / ADReSSo / ADReSS-M subsets are also released for specific
+  INTERSPEECH challenge years (sometimes with separate license terms).
+size: |
+  Pitt Corpus: ~200 AD patients + ~100 healthy controls, longitudinal
+  (1983–1988), the most-used corpus in AD speech research.
+  ADReSS challenge (INTERSPEECH 2020): 156 participants (78 AD + 78 HC),
+  balanced for age/gender.
+  Additional corpora: WLS, Carolinas, Lu, Hopkins, Kempler, etc.
+counts:
+  pitt_ad_patients: 200
+  pitt_controls: 100
+  adress_participants: 156
+  individuals: 1500              # approximate across all DementiaBank corpora
+last_updated: 2024
+citation:
+  - https://doi.org/10.1044/2022_AJSLP-22-00281    # DementiaBank rationale, AJSLP 2023
+  - https://doi.org/10.3233/JAD-200888             # ADReSS challenge, JAD 2020
+related_resources:
+  - childes
+  - sea_ad
+notes: |
+  Canonical resource for speech/language-based Alzheimer's detection.
+  Cookie-Theft picture description is the most-used elicitation
+  protocol. Note "Clever Hans" warning (Pitt-Liu): some models trained
+  on Pitt have been shown to exploit dataset shortcuts rather than AD-
+  related linguistic features — validate on independent corpora.
+last_verified: 2026-05-13

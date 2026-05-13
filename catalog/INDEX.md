@@ -164,6 +164,28 @@ first, then tiered, then controlled.
 
 ---
 
+## Signals & behavior (speech, EEG, gait, mobile health)
+
+| Resource | Data | Access | File |
+|---|---|---|---|
+| [DementiaBank](https://dementia.talkbank.org/) | AD speech/language; Pitt Corpus (~300 subjects), ADReSS/ADReSSo challenges | TalkBank membership (free, sponsored) | [`signals_and_behavior/dementiabank.yaml`](signals_and_behavior/dementiabank.yaml) |
+| [CHILDES](https://childes.talkbank.org/) | 436 child-speech corpora, 48 languages | mostly free with TalkBank login | [`signals_and_behavior/childes.yaml`](signals_and_behavior/childes.yaml) |
+| [PhysioNet](https://physionet.org/) | >150 biomedical signal datasets (ECG, EEG, gait, sleep, MIMIC modules) | tiered: open / restricted / credentialed | [`signals_and_behavior/physionet.yaml`](signals_and_behavior/physionet.yaml) |
+| [TUH EEG Corpus](https://isip.piconepress.com/projects/tuh_eeg/) | 16,986 clinical EEG sessions from 10,874 patients | free with DUA email | [`signals_and_behavior/tuh_eeg.yaml`](signals_and_behavior/tuh_eeg.yaml) |
+| [OpenNeuro](https://openneuro.org/) | 1,041 MRI + 403 EEG BIDS-validated datasets (~70k participants) | CC0, public | [`signals_and_behavior/openneuro.yaml`](signals_and_behavior/openneuro.yaml) |
+| [mPower](https://sagebionetworks.org/research-projects/mpower-researcher-portal/) | Parkinson's mobile sensor data (~8,320 participants; voice + gait + tapping) | Synapse-credentialed (free) | [`signals_and_behavior/mpower.yaml`](signals_and_behavior/mpower.yaml) |
+
+---
+
+## Data challenges & benchmarks
+
+| Resource | Scope | File |
+|---|---|---|
+| [DREAM Challenges](https://sagebionetworks.org/community/dreamchallenges) | 60+ biomedical prediction challenges on Synapse (drug response, BEAT-PD, Mammography, single-cell, etc.) | [`challenges/dream_challenges.yaml`](challenges/dream_challenges.yaml) |
+| [Grand Challenge](https://grand-challenge.org/) | Medical-imaging competitions with live leaderboards (BraTS, KiTS, Learn2Reg, PANORAMA, etc.) | [`challenges/grand_challenge.yaml`](challenges/grand_challenge.yaml) |
+
+---
+
 ## Bioimaging & volumetric image archives
 
 | Resource | Data | Scale | File |

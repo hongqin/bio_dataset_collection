@@ -1,0 +1,55 @@
+name: OpenNeuro
+short_id: openneuro
+url: https://openneuro.org/
+provider: Stanford Center for Reproducible Neuroscience; BRAIN Initiative–designated archive
+species:
+  - Homo sapiens
+  - non_human_primate
+  - mouse
+taxonomy_ids:
+  - 9606
+research_themes:
+  - neuroscience
+  - neuroimaging
+  - eeg
+  - meg
+  - clinical_neuroscience
+  - reproducible_research
+data_modalities:
+  - structural_mri            # T1w, T2w, FLAIR
+  - functional_mri            # task, resting state
+  - diffusion_mri
+  - eeg
+  - meg
+  - intracranial_eeg          # iEEG / ECoG
+  - bids_metadata             # BIDS-validated
+access_mode:
+  - public_open
+access_details: |
+  All datasets released under Creative Commons CC0; no registration.
+    - Portal: https://openneuro.org/
+    - DataLad versioning + S3 mirror on AWS Open Data:
+      https://registry.opendata.aws/openneuro/
+    - Command-line + Python clients.
+  Mandatory BIDS validation at upload — every dataset is BIDS-compliant.
+size: |
+  ~1,041 public MRI datasets (~46,997 participants) and ~403 EEG datasets
+  (~23,069 participants). Counts grow weekly. Also hosts MEG, iEEG, and
+  PET. Many BRAIN-Initiative-funded datasets deposit here by mandate.
+counts:
+  mri_datasets: 1041
+  mri_participants: 46997
+  eeg_datasets: 403
+  eeg_participants: 23069
+last_updated: 2026
+citation:
+  - https://doi.org/10.7554/eLife.71774    # OpenNeuro, eLife 2021
+related_resources:
+  - physionet
+  - tuh_eeg
+notes: |
+  Use OpenNeuro when you need BIDS-formatted multi-modal neuro data with
+  permissive CC0 licensing — ideal for reproducible analysis pipelines
+  (fMRIPrep, MNE-BIDS-Pipeline). Pair with [[tuh_eeg]] for clinical
+  scale and [[physionet]] for biomedical signals beyond neuroimaging.
+last_verified: 2026-05-13

@@ -1,0 +1,54 @@
+name: mPower (Parkinson's Mobile Sensor Study)
+short_id: mpower
+url: https://sagebionetworks.org/research-projects/mpower-researcher-portal/
+provider: Sage Bionetworks; University of Rochester; built on Apple ResearchKit
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - parkinsons_disease
+  - mobile_health
+  - wearable_sensors
+  - voice_analysis
+  - gait_analysis
+  - clinical_machine_learning
+data_modalities:
+  - tapping_test               # touchscreen finger-tapping
+  - voice                      # smartphone microphone, sustained phonation
+  - walking_gait               # smartphone accelerometer + gyroscope
+  - memory_test
+  - mds_updrs_surveys
+  - pdq_8_surveys
+  - demographics
+access_mode:
+  - registration_required
+  - usage_agreement
+access_details: |
+  Free, but Synapse-credentialed:
+    1. Create a Synapse account and pass the Certified User quiz.
+    2. Submit an Intended Data Use statement (posted publicly).
+    3. Agree to the mPower Conditions for Use (no re-identification,
+       no sale, open-access publication required).
+    - Portal: https://www.synapse.org/#!Synapse:syn4993293
+    - R / Python / CLI clients for programmatic download.
+size: |
+  ~8,320 participants who completed at least one task — making mPower
+  one of the largest mobile-sensor Parkinson's cohorts. Seven module
+  types: demographics, MDS-UPDRS, PDQ-8, memory, tapping, voice, walking.
+counts:
+  individuals: 8320
+  modules: 7
+last_updated: 2018
+citation:
+  - https://doi.org/10.1038/sdata.2016.11    # mPower, Scientific Data 2016
+related_resources:
+  - dream_challenges
+  - physionet
+notes: |
+  Pioneer of "research-grade smartphone health studies" — the data have
+  driven multiple DREAM Challenges (BEAT-PD, etc.). Strong example of
+  passive multi-modal sensor data (voice + gait + tapping) on the same
+  cohort. Use for sensor-fusion methods and as a real-world PD ML
+  benchmark.
+last_verified: 2026-05-13

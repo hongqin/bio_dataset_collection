@@ -1,0 +1,56 @@
+name: Temple University Hospital EEG Corpus (TUH EEG)
+short_id: tuh_eeg
+url: https://isip.piconepress.com/projects/tuh_eeg/
+provider: Neural Engineering Data Consortium (NEDC), Temple University
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - eeg
+  - clinical_neurophysiology
+  - seizure_detection
+  - epilepsy
+  - clinical_machine_learning
+data_modalities:
+  - clinical_eeg              # EDF format, scalp recordings
+  - clinical_reports          # text reports paired with sessions
+  - annotations               # seizure events, abnormality labels
+  - subset_corpora            # TUSZ (seizure), TUAB (abnormal), TUEV (events), TUEP (epilepsy)
+access_mode:
+  - registration_required
+  - usage_agreement
+access_details: |
+  Free, but identity-gated.
+    - Project page: https://isip.piconepress.com/projects/tuh_eeg/
+    - Email a signed access form to help@nedcdata.org with subject
+      "Download The TUH EEG Corpus".
+    - Bulk transfer typically via rsync to nedc_tuh_eeg@
+      www.isip.piconepress.com — for >300 GB, organizers can ship USB
+      drives.
+size: |
+  ~16,986 EEG sessions from ~10,874 unique subjects, collected over
+  14 years of routine clinical EEG at Temple University Hospital.
+  Uncompressed EDFs + reports = ~572 GB. Sub-corpora include:
+    - TUSZ — seizure detection (event-level annotation)
+    - TUAB — normal vs. abnormal classification
+    - TUEV — event types
+    - TUEP — epilepsy patients
+  Extended labeled set (Roy et al. 2024): ~15,300 automatically labeled
+  recordings for pathology decoding.
+counts:
+  sessions: 16986
+  individuals: 10874
+  storage_gb: 572
+last_updated: 2024
+citation:
+  - https://doi.org/10.3389/fnins.2016.00196    # TUH EEG Corpus, Front Neurosci 2016
+related_resources:
+  - physionet
+  - openneuro
+notes: |
+  Largest open clinical EEG corpus by patient count — the natural training
+  set for clinical-EEG ML (seizure detection, pathology classification).
+  Smaller PhysioNet EEG datasets (CHB-MIT, EEGMMIDB) are appropriate for
+  method development; TUH for scale and generalization.
+last_verified: 2026-05-13

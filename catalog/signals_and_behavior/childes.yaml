@@ -1,0 +1,51 @@
+name: CHILDES (Child Language Data Exchange System)
+short_id: childes
+url: https://childes.talkbank.org/
+provider: TalkBank (Carnegie Mellon University)
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - child_language_development
+  - linguistics
+  - speech_processing
+  - clinical_speech
+  - cross_linguistic_studies
+data_modalities:
+  - audio_recordings
+  - video_recordings
+  - transcripts                # CHAT format
+  - morphological_tags
+  - clinical_metadata          # autism, SLI, late-talker corpora
+access_mode:
+  - public_open
+  - registration_required      # for some clinical sub-corpora
+access_details: |
+  Most CHILDES corpora are freely downloadable after a free TalkBank
+  account login. Clinical corpora (autism, specific language impairment,
+  brain injury) have additional access requirements per data author.
+    - Portal: https://childes.talkbank.org/
+    - childes-db: a flexible relational interface for reproducible
+      research (Python + R: childesr).
+    - Tools: CLAN program for transcript analysis.
+size: |
+  As of 2024: 436 corpora in 48 languages, transcripts + audio + video.
+  Major collections include English Brown corpus (Roger Brown's
+  pioneering Adam/Eve/Sarah longitudinal data), MacWhinney corpus,
+  cross-linguistic typically-developing children, plus dedicated
+  clinical corpora.
+counts:
+  corpora: 436
+  languages: 48
+last_updated: 2024
+citation:
+  - https://doi.org/10.3758/s13428-018-1176-7   # childes-db, BRM 2019
+related_resources:
+  - dementiabank
+notes: |
+  Established 1984 — the longest-running open language data resource.
+  Used heavily for child-speech ASR development, language-acquisition
+  modeling, and clinical-language assessment. Pair with [[dementiabank]]
+  for the language-aging continuum.
+last_verified: 2026-05-13

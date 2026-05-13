@@ -1,0 +1,56 @@
+name: Grand Challenge (grand-challenge.org)
+short_id: grand_challenge
+url: https://grand-challenge.org/
+provider: Diagnostic Image Analysis Group, Radboud University Medical Center; community
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - medical_imaging
+  - radiology_machine_learning
+  - segmentation
+  - registration
+  - pathology
+  - challenge_benchmarks
+data_modalities:
+  - mri                       # brain, prostate, breast, pancreas
+  - ct                        # lung, abdomen, head & neck
+  - pet                       # PSMA, FDG
+  - ultrasound
+  - histopathology_slides     # whole-slide imaging
+  - segmentation_masks
+  - registration_pairs
+  - leaderboards
+access_mode:
+  - tiered
+  - public_open               # most challenge data after release
+  - registration_required     # free account
+  - usage_agreement           # per-challenge DUA
+access_details: |
+  Free account required to download challenge data and submit predictions.
+  Each challenge has its own page with dataset description, license, and
+  containerized evaluation pipeline. Submissions are automatically
+  scored on a held-out test set and ranked on a live leaderboard.
+size: |
+  Hundreds of challenges and benchmark datasets across radiology and
+  digital pathology. Long-running flagship challenges include BraTS
+  (brain tumor segmentation), KiTS (kidney tumors), LiTS (liver tumors),
+  Learn2Reg (image registration, 10+ public sub-tasks built on OpenBHB
+  T1w MRI), PANORAMA (~3,000 prostate cases), PANTHER (489 pancreas
+  MRIs + 84 MR-linac), MitoEM (mitochondria in EM), Deep-PSMA (PET).
+counts:
+  challenges: 300            # approximate; grand-challenge.org listing
+last_updated: 2026
+citation:
+  - https://doi.org/10.1016/j.media.2014.04.005   # Grand Challenge overview
+related_resources:
+  - tcia
+  - dream_challenges
+notes: |
+  Where DREAM is umbrella across all of biomedicine, Grand Challenge is
+  the specialty venue for MEDICAL-IMAGING competitions with
+  containerized scoring. Many TCIA collections appear as Grand
+  Challenge training sets after curation. Strong leaderboard culture
+  with reproducible Docker submissions.
+last_verified: 2026-05-13
