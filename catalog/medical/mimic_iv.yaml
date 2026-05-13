@@ -1,0 +1,59 @@
+name: MIMIC-IV (Medical Information Mart for Intensive Care)
+short_id: mimic_iv
+url: https://physionet.org/content/mimiciv/
+provider: MIT Laboratory for Computational Physiology; Beth Israel Deaconess Medical Center (BIDMC)
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - clinical_ehr
+  - critical_care
+  - clinical_machine_learning
+  - sepsis
+  - mortality_prediction
+data_modalities:
+  - ehr                     # admissions, diagnoses (ICD-9/10), procedures
+  - vital_signs
+  - lab_measurements
+  - medications
+  - clinical_notes          # MIMIC-IV-Note module
+  - imaging_links           # MIMIC-CXR for chest X-rays
+  - waveforms               # MIMIC-IV-Waveform
+access_mode:
+  - tiered
+  - public_open               # demo subset (~100 patients) — open
+  - controlled_access_dac     # full DB — credentialed + DUA
+access_details: |
+  Two tiers:
+    1. OPEN — MIMIC-IV Demo (~100 de-identified patients), Open Data on AWS,
+       suitable for tutorials and method prototyping.
+    2. CREDENTIALED — full MIMIC-IV. Three-step process:
+         (a) Complete CITI "Data or Specimens Only Research" training.
+         (b) Submit credentialing application on PhysioNet.
+         (c) Sign the PhysioNet Credentialed Health Data License 1.5.0 DUA.
+       Free, no institutional sign-off required, but credentials must be
+       renewed periodically.
+  Latest version: MIMIC-IV v3.1; ED, Note, CXR, Waveform are released as
+  separate satellite modules.
+size: |
+  ~300,000 patients total. >65,000 ICU admissions and >200,000 emergency-
+  department visits at BIDMC, 2008–2022. ~94M chart events, ~120M lab
+  events, ~25M procedure events; tens of millions of clinical note tokens
+  in MIMIC-IV-Note.
+counts:
+  individuals: 300000
+  icu_admissions: 65000
+  ed_visits: 200000
+last_updated: 2024     # v3.1
+citation:
+  - https://doi.org/10.1038/s41597-022-01899-x   # Johnson et al., Sci Data 2023
+related_resources:
+  - eicu_crd
+  - synthea
+  - chestxray14
+notes: |
+  De-facto standard for clinical-ML benchmarks. Single-center (BIDMC), so
+  test transportability with [[eicu_crd]] (multi-center) before claiming
+  generalization. No genotype data; phenotype = EHR.
+last_verified: 2026-05-13

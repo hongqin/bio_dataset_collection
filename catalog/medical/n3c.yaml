@@ -1,0 +1,51 @@
+name: National COVID Cohort Collaborative (N3C) Data Enclave
+short_id: n3c
+url: https://covid.cd2h.org/
+provider: NIH NCATS (National Center for Advancing Translational Sciences)
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - clinical_ehr
+  - covid_19
+  - long_covid
+  - pandemic_response
+  - multi_institution_clinical
+data_modalities:
+  - ehr                  # OMOP common data model
+  - demographics
+  - lab_results
+  - medications
+  - vaccinations
+  - outcomes
+access_mode:
+  - controlled_access_dac
+  - usage_agreement      # institutional DUA with NCATS required
+access_details: |
+  Multi-step process; all analysis happens inside the secure cloud enclave
+  (Palantir Foundry) — no bulk download.
+    1. Home institution must have an Institutional DUA with NCATS.
+    2. Researcher registers, completes required training (privacy + ethics).
+    3. Submit a Data Use Request through the N3C enclave.
+    4. Conduct all analyses inside the enclave; only aggregate, approved
+       outputs may be exported.
+  Synthetic and de-identified tiers available for less-restricted use.
+size: |
+  Harmonized EHR from >75 contributing sites covering >22,000,000 patients
+  (COVID-tested or diagnosed), 30M+ in the broader cohort. Additional
+  comparison cohorts for SARS, MERS, H1N1.
+counts:
+  individuals: 22000000
+  sites: 75
+last_updated: 2026
+citation:
+  - https://doi.org/10.1093/jamia/ocab029    # Haendel et al., JAMIA 2021
+related_resources:
+  - mimic_iv
+  - all_of_us
+notes: |
+  One of the largest harmonized US EHR resources for COVID-19 and now
+  long-COVID/PASC research. Cloud-only analysis means workflows must be
+  developed inside the enclave's Python/R/Spark notebooks.
+last_verified: 2026-05-13

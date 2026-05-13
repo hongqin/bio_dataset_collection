@@ -1,0 +1,45 @@
+name: ESM Metagenomic Atlas
+short_id: esm_atlas
+url: https://esmatlas.com/
+provider: Meta AI (Fundamental AI Research)
+species:
+  - multi-species               # primarily uncharacterized metagenomic proteins
+research_themes:
+  - protein_structure
+  - metagenomics
+  - dark_proteome
+  - functional_genomics
+data_modalities:
+  - predicted_protein_structures   # ESMFold predictions
+  - per_residue_confidence         # pLDDT
+  - sequence_metadata
+access_mode:
+  - public_open
+access_details: |
+  CC-BY 4.0; academic and commercial use.
+    - Browser + search-by-sequence/structure: https://esmatlas.com/
+    - High-confidence subset bulk download: ~1 TB
+    - Full database (PDB format, v0): ~15 TB
+    - Metadata sqlite/parquet (~25 GB) for indexing.
+    - Programmatic API via curl.
+size: |
+  ~617,000,000 predicted metagenomic protein structures (largest in the
+  world by entry count). Covers proteins from environmental microbial
+  samples that have no representative in characterized reference proteomes,
+  i.e., much of the "dark proteome".
+counts:
+  predicted_structures: 617000000
+  predicted_structures_high_confidence: 225000000   # approx high-pLDDT subset
+last_updated: 2022-11
+citation:
+  - https://doi.org/10.1126/science.ade2574   # ESMFold, Science 2023
+related_resources:
+  - alphafold_db
+  - jgi
+notes: |
+  Complements AFDB by covering proteins absent from UniProt (especially
+  uncultured environmental microbes / IMG/M MAGs). ESMFold is faster but
+  generally less accurate than AlphaFold2 — pLDDT filtering is essential.
+  Not actively expanding; Meta's newer ESM3 predictions are released as
+  models rather than as a comparable database.
+last_verified: 2026-05-13

@@ -1,0 +1,50 @@
+name: NIH ChestX-ray14
+short_id: chestxray14
+url: https://nihcc.app.box.com/v/ChestXray-NIHCC
+provider: NIH Clinical Center
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - medical_imaging
+  - radiology
+  - chest_xray
+  - clinical_machine_learning
+  - thoracic_disease
+data_modalities:
+  - chest_radiographs        # PNG, 1024×1024
+  - weak_labels              # 14 disease classes text-mined from reports
+  - bounding_boxes           # small expert-annotated subset
+access_mode:
+  - public_open
+access_details: |
+  No registration, no DUA — direct download.
+    - Original NIH download (Box):
+      https://nihcc.app.box.com/v/ChestXray-NIHCC
+    - Google Cloud Healthcare API mirror; multiple Kaggle and Hugging Face
+      mirrors with resized variants.
+  Attribution required: link to NIH download site + acknowledge NIH Clinical
+  Center.
+size: |
+  112,120 chest X-ray images from 30,805 unique patients (one of the
+  largest public radiology datasets). Labels are weak (NLP-mined from
+  radiology reports) and known to be noisy — use carefully for ML
+  benchmarks.
+counts:
+  images: 112120
+  individuals: 30805
+  label_classes: 14
+last_updated: 2017
+citation:
+  - https://doi.org/10.1109/CVPR.2017.369    # Wang et al., CVPR 2017
+related_resources:
+  - chexpert
+  - tcia
+  - mimic_iv     # MIMIC-CXR is a separate but related chest-X-ray dataset
+notes: |
+  The "ChestX-ray8/14" benchmark — has well-documented label-noise issues
+  (Oakden-Rayner 2020). For cleaner radiologist-derived labels at scale,
+  see [[chexpert]]. For paired EHR + chest X-rays, see MIMIC-CXR
+  (PhysioNet, credentialed).
+last_verified: 2026-05-13

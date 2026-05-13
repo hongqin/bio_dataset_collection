@@ -1,0 +1,49 @@
+name: AlphaFold Protein Structure Database (AFDB)
+short_id: alphafold_db
+url: https://alphafold.ebi.ac.uk/
+provider: Google DeepMind; EMBL-EBI
+species:
+  - multi-species
+research_themes:
+  - protein_structure
+  - structural_biology
+  - functional_genomics
+  - drug_discovery
+data_modalities:
+  - predicted_protein_structures   # AlphaFold2 / AlphaFold-Multimer
+  - per_residue_confidence         # pLDDT
+  - predicted_aligned_error        # PAE
+access_mode:
+  - public_open
+access_details: |
+  CC-BY 4.0 license, academic and commercial use. No registration.
+    - Browser: https://alphafold.ebi.ac.uk/
+    - Per-entry mmCIF/PDB with pLDDT + PAE; bulk downloads at
+      https://alphafold.ebi.ac.uk/download
+    - Full dataset (~23 TiB) mirrored on Google Cloud Storage.
+    - REST API for single-entry retrieval.
+  Whole-proteome bundles available for 48 priority organisms + Swiss-Prot.
+size: |
+  ~261,000,000 predicted structures covering nearly all of UniProt
+  (~214M sequences in the 2024 release, grown by isoform expansion).
+  48 reference proteomes pre-bundled (human, mouse, fly, worm, yeast,
+  Arabidopsis, E. coli, malaria, TB, SARS-CoV-2, etc.).
+counts:
+  predicted_structures: 261000000
+  isoforms: 40054
+  proteomes: 48
+  species: 1000000             # approximate — covers UniProt taxonomy
+last_updated: 2024
+citation:
+  - https://doi.org/10.1038/s41586-021-03819-2   # AlphaFold2, Nature 2021
+  - https://doi.org/10.1093/nar/gkad1011         # AFDB NAR 2024
+related_resources:
+  - pdb
+  - esm_atlas
+notes: |
+  Largest and best-curated source of predicted protein structures. Always
+  check pLDDT scores per residue — low-pLDDT regions are often intrinsically
+  disordered, not modeling failures. Newer AlphaFold 3 predictions (incl.
+  ligands, nucleic acids) live in the AlphaFold Server, distinct from this
+  database.
+last_verified: 2026-05-13

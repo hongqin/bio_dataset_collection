@@ -1,0 +1,47 @@
+name: CheXpert
+short_id: chexpert
+url: https://aimi.stanford.edu/datasets/chexpert-chest-x-rays
+provider: Stanford ML Group; Stanford AIMI Center
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - medical_imaging
+  - radiology
+  - chest_xray
+  - clinical_machine_learning
+  - uncertainty_labels
+data_modalities:
+  - chest_radiographs        # frontal + lateral
+  - structured_labels        # 14 observations with uncertainty
+  - validation_set_radiologist_consensus
+access_mode:
+  - usage_agreement
+access_details: |
+  Free for academic / non-commercial research; requires a request and
+  acceptance of Stanford's specific dataset license.
+    - Request page: https://aimi.stanford.edu/datasets/chexpert-chest-x-rays
+    - DOI: https://doi.org/10.71718/y7pj-4v93
+  Original CheXpert and the larger CheXpert Plus release (with report
+  text) are available under similar terms.
+size: |
+  224,316 chest radiographs from 65,240 patients at Stanford Health Care
+  (October 2002 – July 2017). Validation set has consensus labels from
+  multiple radiologists.
+counts:
+  images: 224316
+  individuals: 65240
+  label_classes: 14
+last_updated: 2024     # CheXpert Plus addition
+citation:
+  - https://doi.org/10.1609/aaai.v33i01.3301590    # Irvin et al., AAAI 2019
+related_resources:
+  - chestxray14
+  - tcia
+notes: |
+  Higher-quality labels than ChestX-ray14 (rule-based extraction by Stanford
+  team rather than crude NLP) and explicit uncertainty labels (0/1/–1/blank).
+  Stanford license is more restrictive than NIH's: non-commercial only,
+  no redistribution.
+last_verified: 2026-05-13

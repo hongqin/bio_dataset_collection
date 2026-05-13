@@ -1,0 +1,48 @@
+name: Synthea / SyntheticMass
+short_id: synthea
+url: https://synthea.mitre.org/
+provider: The MITRE Corporation; open-source community
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - clinical_ehr
+  - synthetic_data
+  - fhir_interoperability
+  - clinical_machine_learning
+  - health_it_testing
+data_modalities:
+  - synthetic_ehr
+  - fhir_bundles           # R4, STU3, DSTU2
+  - ccda
+  - csv_exports
+  - claims_data            # synthetic
+access_mode:
+  - public_open
+access_details: |
+  Fully open — no privacy, cost, or DUA restrictions because the data is
+  synthetic (no real patients).
+    - Downloads: https://synthea.mitre.org/downloads
+    - Generator on GitHub (Apache 2.0): https://github.com/synthetichealth/synthea
+    - "SyntheticMass" pre-generated population of 1M Massachusetts residents.
+  Outputs: FHIR R4/STU3/DSTU2 bundles, C-CDA, CSV, CPCDS claims.
+size: |
+  Pre-generated SyntheticMass population: ~1,000,000 synthetic Massachusetts
+  residents. Other releases include 100k synthetic COVID-19 patient CSVs and
+  sample sets of ~1,000 patients in each FHIR/CCDA format. Users can
+  generate populations of arbitrary size locally with the generator.
+counts:
+  individuals_syntheticmass: 1000000
+  individuals_covid_csv: 100000
+last_updated: 2026
+citation:
+  - https://doi.org/10.1093/jamia/ocx079    # Walonoski et al., JAMIA 2018
+related_resources:
+  - mimic_iv
+notes: |
+  No HIPAA / consent / DUA constraints — ideal for tutorials, CI testing of
+  health-IT systems, FHIR integration prototypes, and reproducible papers.
+  Diseases follow modeled incidence/prevalence; not suitable for studying
+  real-world disease epidemiology.
+last_verified: 2026-05-13

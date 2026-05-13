@@ -1,0 +1,43 @@
+name: Electron Microscopy Public Image Archive (EMPIAR)
+short_id: empiar
+url: https://www.ebi.ac.uk/empiar/
+provider: EMBL-EBI
+species:
+  - multi-species
+research_themes:
+  - structural_biology
+  - cryo_em
+  - method_development
+  - dataset_benchmarks
+data_modalities:
+  - raw_em_micrographs       # individual images / movies
+  - motion_corrected_movies
+  - particle_picks
+  - tomography_tilt_series
+  - micrograph_metadata
+access_mode:
+  - public_open
+access_details: |
+  CC0; no registration.
+    - Browser: https://www.ebi.ac.uk/empiar/
+    - Bulk download via Globus, Aspera, FTP, IBM Aspera.
+    - Datasets are large (often 100s of GB to 10s of TB per entry).
+size: |
+  2,900 entries as of 2026-05-13, occupying ~8.48 PiB of storage.
+  Per-entry sizes commonly range from ~100 GB (small single-particle)
+  to >5 TB (cryo-ET tilt-series collections).
+counts:
+  entries: 2900
+  storage_pib: 8.48
+last_updated: 2026-05
+citation:
+  - https://doi.org/10.1093/nar/gkad749     # EMPIAR NAR 2024
+related_resources:
+  - emdb
+  - pdb
+notes: |
+  Use EMPIAR datasets to reprocess raw micrographs (e.g., new particle
+  picking, denoising, alternative refinement) — exactly the workflow that
+  consumed petabytes during the cryo-EM resolution revolution. Pair the
+  raw images with the matching EMDB reconstruction for validation.
+last_verified: 2026-05-13

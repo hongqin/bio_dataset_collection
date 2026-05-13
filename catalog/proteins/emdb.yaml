@@ -1,0 +1,43 @@
+name: Electron Microscopy Data Bank (EMDB)
+short_id: emdb
+url: https://www.ebi.ac.uk/emdb/
+provider: wwPDB consortium (EMDataResource); EMBL-EBI host
+species:
+  - multi-species
+research_themes:
+  - structural_biology
+  - cryo_em
+  - viruses
+  - macromolecular_complexes
+data_modalities:
+  - cryo_em_maps             # 3D reconstructions (MRC / CCP4 maps)
+  - sub_tomogram_averages
+  - 2d_class_averages
+  - fitted_atomic_models     # references to PDB entries
+  - validation_reports
+access_mode:
+  - public_open
+access_details: |
+  No registration; CC0 for map and metadata.
+    - Browser: https://www.ebi.ac.uk/emdb/
+    - FTP: https://ftp.ebi.ac.uk/pub/databases/emdb/
+    - Search API; integrated with RCSB PDB.
+  Associated atomic models (when present) are deposited in the PDB and
+  cross-linked.
+size: |
+  57,161 entries (as of 2026-05). 3D reconstructions from single-particle
+  cryo-EM, electron tomography, sub-tomogram averaging, and 2D crystals.
+  Resolutions span ~1.5 Å (single-particle, atomic) to >40 Å (tomography).
+counts:
+  entries: 57161
+last_updated: 2026-05
+citation:
+  - https://doi.org/10.1093/nar/gkad1019    # EMDB NAR 2024
+related_resources:
+  - pdb
+  - empiar
+notes: |
+  Stores the reconstructed maps — not raw images. For raw micrographs
+  underlying these reconstructions, see [[empiar]]. EMDB and PDB are now
+  deposited together via the OneDep system.
+last_verified: 2026-05-13

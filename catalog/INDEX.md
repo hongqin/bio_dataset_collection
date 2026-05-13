@@ -110,6 +110,39 @@ first, then tiered, then controlled.
 
 ---
 
+## Protein structures & cryo-EM
+
+| Resource | Data | Access | File |
+|---|---|---|---|
+| [PDB / RCSB / wwPDB](https://www.rcsb.org/) | 227k experimental structures + 1M CSMs | public, CC0 | [`proteins/pdb.yaml`](proteins/pdb.yaml) |
+| [AlphaFold DB](https://alphafold.ebi.ac.uk/) | ~261M predicted structures covering UniProt | public, CC-BY 4.0 | [`proteins/alphafold_db.yaml`](proteins/alphafold_db.yaml) |
+| [ESM Metagenomic Atlas](https://esmatlas.com/) | ~617M ESMFold predictions of metagenomic proteins | public, CC-BY 4.0 | [`proteins/esm_atlas.yaml`](proteins/esm_atlas.yaml) |
+| [EMDB](https://www.ebi.ac.uk/emdb/) | 57k+ cryo-EM 3D reconstructions | public, CC0 | [`proteins/emdb.yaml`](proteins/emdb.yaml) |
+| [EMPIAR](https://www.ebi.ac.uk/empiar/) | 2,900 raw cryo-EM image datasets (8.5 PiB) | public, CC0 | [`proteins/empiar.yaml`](proteins/empiar.yaml) |
+
+---
+
+## Clinical / EHR & medical imaging
+
+### EHR / clinical
+
+| Resource | Access | Scale | File |
+|---|---|---|---|
+| [Synthea / SyntheticMass](https://synthea.mitre.org/) | fully public (synthetic, Apache 2.0) | ~1M synthetic MA patients + generator | [`medical/synthea.yaml`](medical/synthea.yaml) |
+| [MIMIC-IV](https://physionet.org/content/mimiciv/) | credentialed (CITI training + DUA), free | ~300k patients, BIDMC 2008–2022 | [`medical/mimic_iv.yaml`](medical/mimic_iv.yaml) |
+| [eICU-CRD](https://eicu-crd.mit.edu/) | credentialed (PhysioNet) | ~200k ICU admissions, ~208 US hospitals | [`medical/eicu_crd.yaml`](medical/eicu_crd.yaml) |
+| [N3C COVID Enclave](https://covid.cd2h.org/) | institutional DUA + cloud-only analysis | ~22M patients across 75+ sites | [`medical/n3c.yaml`](medical/n3c.yaml) |
+
+### Medical imaging
+
+| Resource | Access | Scale | File |
+|---|---|---|---|
+| [TCIA](https://www.cancerimagingarchive.net/) | mostly public (per-collection DOI) | 175+ collections, ~80k patients, multi-modal | [`medical/tcia.yaml`](medical/tcia.yaml) |
+| [NIH ChestX-ray14](https://nihcc.app.box.com/v/ChestXray-NIHCC) | public, attribution only | 112,120 X-rays, 30,805 patients | [`medical/chestxray14.yaml`](medical/chestxray14.yaml) |
+| [CheXpert](https://aimi.stanford.edu/datasets/chexpert-chest-x-rays) | request + Stanford non-commercial license | 224,316 X-rays, 65,240 patients | [`medical/chexpert.yaml`](medical/chexpert.yaml) |
+
+---
+
 ## Multi-species / comparative
 
 | Resource | Access | Themes | File |

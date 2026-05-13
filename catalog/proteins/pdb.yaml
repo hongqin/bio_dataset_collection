@@ -1,0 +1,50 @@
+name: Worldwide Protein Data Bank (wwPDB / RCSB PDB / PDBe / PDBj)
+short_id: pdb
+url: https://www.rcsb.org/
+provider: wwPDB consortium (RCSB Rutgers/UCSD; PDBe at EMBL-EBI; PDBj at Osaka)
+species:
+  - multi-species
+research_themes:
+  - structural_biology
+  - protein_structure
+  - drug_discovery
+  - functional_genomics
+data_modalities:
+  - protein_structures        # X-ray, cryo-EM, NMR, neutron
+  - nucleic_acid_structures
+  - complex_structures
+  - validation_reports
+  - computed_structure_models # CSMs from AlphaFold + ModelArchive surfaced alongside experimental
+access_mode:
+  - public_open
+access_details: |
+  CC0 Public Domain Dedication. No registration.
+    - RCSB browser: https://www.rcsb.org/
+    - PDBe browser: https://www.ebi.ac.uk/pdbe/
+    - PDBj browser: https://pdbj.org/
+    - FTP: https://files.rcsb.org/   (mmCIF / PDB / structure factors / maps)
+    - REST APIs: Data, Search, 1D-Coordinates.
+  Mirrors are content-identical; chemical-component dictionary and validation
+  reports also CC0.
+size: |
+  >227,000 experimentally-determined structures (X-ray ~85%, cryo-EM rising
+  fast, NMR, neutron). Alongside, >1,000,000 Computed Structure Models
+  (CSMs) from AlphaFold + ModelArchive are surfaced through the same APIs.
+counts:
+  experimental_structures: 227000
+  computed_structure_models: 1000000
+  species: 100000              # approx — across all deposited structures
+last_updated: 2026
+citation:
+  - https://doi.org/10.1093/nar/gkae1110     # RCSB PDB NAR 2025
+  - https://doi.org/10.1093/nar/gkac1077     # PDB 50-year
+related_resources:
+  - alphafold_db
+  - emdb
+  - empiar
+notes: |
+  Foundational resource for structural biology. Use the wwPDB "validation
+  report" before relying on any individual entry. The integration with
+  AlphaFold CSMs means a single sequence-search query returns both
+  experimental and predicted structures.
+last_verified: 2026-05-13

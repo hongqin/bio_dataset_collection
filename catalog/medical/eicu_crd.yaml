@@ -1,0 +1,47 @@
+name: eICU Collaborative Research Database (eICU-CRD)
+short_id: eicu_crd
+url: https://eicu-crd.mit.edu/
+provider: MIT Laboratory for Computational Physiology; Philips eICU program
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - clinical_ehr
+  - critical_care
+  - clinical_machine_learning
+  - multi_center_generalization
+data_modalities:
+  - ehr
+  - vital_signs
+  - care_plan_documentation
+  - severity_of_illness
+  - diagnoses
+  - treatments
+  - lab_measurements
+access_mode:
+  - tiered
+  - public_open               # demo subset
+  - controlled_access_dac     # full DB — credentialed + DUA
+access_details: |
+  Same PhysioNet credentialed-access workflow as MIMIC-IV:
+    1. CITI "Data or Specimens Only Research" training.
+    2. PhysioNet credentialing application.
+    3. Sign the eICU-CRD DUA.
+  Demo subset (eicu-crd-demo) is openly downloadable.
+size: |
+  >200,000 ICU admissions at ~208 US hospitals (2014–2015) collected via
+  the Philips eICU telehealth platform.
+counts:
+  icu_admissions: 200000
+  hospitals: 208
+last_updated: 2019     # v2.0
+citation:
+  - https://doi.org/10.1038/sdata.2018.178   # Pollard et al., Sci Data 2018
+related_resources:
+  - mimic_iv
+notes: |
+  Multi-center counterpart to single-center MIMIC-IV — standard test set for
+  EHR-ML transportability. Time range is narrower (2014–2015), so anchor
+  longitudinal claims accordingly.
+last_verified: 2026-05-13

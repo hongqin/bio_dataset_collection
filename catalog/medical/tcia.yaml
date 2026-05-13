@@ -1,0 +1,55 @@
+name: The Cancer Imaging Archive (TCIA)
+short_id: tcia
+url: https://www.cancerimagingarchive.net/
+provider: NCI; University of Arkansas for Medical Sciences; Frederick National Laboratory
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - cancer_imaging
+  - radiology
+  - radiomics
+  - histopathology
+  - clinical_machine_learning
+  - cancer_genomics
+data_modalities:
+  - radiology_imaging       # CT, MRI, PET, mammography
+  - histopathology_slides
+  - clinical_annotations
+  - segmentation_masks
+  - linked_outcomes
+  - linked_genomics         # cross-linked to GDC / TCGA where available
+access_mode:
+  - tiered
+  - public_open               # most collections — CC-BY style
+  - controlled_access_dac     # a subset of collections require DUA
+access_details: |
+  Most TCIA collections are openly downloadable; a minority require a per-
+  collection access agreement noted on the collection page.
+    - Collection browser: https://www.cancerimagingarchive.net/browse-collections/
+    - NBIA Data Retriever (Win/Mac/Linux) for DICOM downloads via manifest files.
+    - Aspera transfer for histopathology / non-DICOM collections.
+    - REST API + Python clients (tcia-utils).
+    - NCI Imaging Data Commons (IDC) provides a cloud-native, BigQuery-
+      indexed view of TCIA's open-access DICOM data.
+  Each collection has its own DOI and citation.
+size: |
+  >175 published imaging collections covering ~80,000+ patients across many
+  cancer types (lung, brain, breast, prostate, head & neck, etc.) and
+  modalities (CT, MRI, PET, digital pathology). Storage is in the petabytes.
+counts:
+  collections: 175
+  individuals: 80000
+last_updated: 2026
+citation:
+  - https://doi.org/10.1007/s10278-013-9622-7    # Clark et al., J Digit Imaging 2013
+related_resources:
+  - chestxray14
+  - chexpert
+notes: |
+  Many TCIA collections are cross-linked to TCGA / GDC genomic data — the
+  rare resource that bridges radiology / pathology imaging with somatic
+  genomics for the same patients. Always cite the per-collection DOI in
+  addition to TCIA itself.
+last_verified: 2026-05-13
