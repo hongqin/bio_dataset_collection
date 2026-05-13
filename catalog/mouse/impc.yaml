@@ -1,0 +1,51 @@
+name: International Mouse Phenotyping Consortium (IMPC)
+short_id: impc
+url: https://www.mousephenotype.org/
+provider: International consortium (Jackson Lab, EMBL-EBI, Sanger, MRC Harwell, KOMP2 centers)
+species:
+  - Mus musculus
+taxonomy_ids:
+  - 10090
+research_themes:
+  - model_organism
+  - knockout_phenotyping
+  - disease_models
+  - functional_genomics
+  - phenotype_ontology
+data_modalities:
+  - knockout_alleles            # systematic single-gene null mice
+  - primary_phenotypes          # ~20 organ-system test pipelines
+  - viability_assays
+  - histopathology_images
+  - statistical_results         # PhenStat genotype-effect tests
+access_mode:
+  - public_open
+access_details: |
+  Open under CC-BY 4.0; programmatic and bulk downloads supported.
+    - Portal: https://www.mousephenotype.org/
+    - Solr/REST API; bulk data dumps via FTP.
+    - Versioned Data Releases (DR) for reproducible analyses.
+  All knockout strains are also distributable through the participating
+  repositories (e.g., JAX MMRRC, INFRAFRONTIER).
+size: |
+  ~85,000,000 data points across all phenotype tests. Over 95,000
+  statistically significant gene-phenotype associations. Target is to
+  knock out and phenotype every mouse protein-coding gene (~22,000); as
+  of late 2024+ releases, >9,000 unique genes have completed phenotyping.
+counts:
+  data_points: 85000000
+  associations: 95000
+  genes_phenotyped: 9000
+  species: 1
+last_updated: 2026
+citation:
+  - https://doi.org/10.1093/nar/gkac972     # IMPC, NAR 2023
+related_resources:
+  - mgi
+  - mpd
+notes: |
+  Systematic, standardized knockout-phenotyping — the closest mammalian
+  analog to yeast/worm deletion-collection screens. ~30% of essential-gene
+  knockouts are embryonic-lethal, mapped to specific developmental stages.
+  Pair with [[mgi]] for literature-curated alleles.
+last_verified: 2026-05-13

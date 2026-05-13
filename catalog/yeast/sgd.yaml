@@ -1,0 +1,51 @@
+name: Saccharomyces Genome Database (SGD)
+short_id: sgd
+url: https://www.yeastgenome.org/
+provider: Stanford University (Cherry Lab); NIH/NHGRI
+species:
+  - Saccharomyces cerevisiae
+taxonomy_ids:
+  - 4932
+research_themes:
+  - functional_genomics
+  - model_organism
+  - genome_annotation
+  - phenotype_ontology
+  - protein_function
+data_modalities:
+  - reference_genome      # S288C plus alternative reference strains
+  - gene_annotation
+  - phenotype_annotations # mutant phenotypes (curated literature)
+  - go_annotations
+  - protein_complexes
+  - genetic_interactions
+  - expression_data
+access_mode:
+  - public_open
+access_details: |
+  Fully open, no registration.
+    - Web portal: https://www.yeastgenome.org/
+    - Downloads (FASTA, GFF, OBO, TSV): https://sgd-archive.yeastgenome.org/
+    - REST API, YeastMine for federated queries.
+  Curation is manual from peer-reviewed literature; releases roughly weekly.
+size: |
+  Reference: ~6,000 protein-coding genes in S288C, full GO + Mammalian-style
+  phenotype annotations covering ~85% of genes. Integrates ~99,000 PubMed-
+  curated references. Alternative-reference strains: CEN.PK113-7D, RM11-1a,
+  Sigma1278b, W303, YJM789, AWRI1631, AWRI796, etc.
+counts:
+  protein_coding_genes: 6000
+  species: 1
+  references_curated: 99000
+last_updated: 2026     # continuous curation
+citation:
+  - https://doi.org/10.1093/nar/gkr1029     # SGD, NAR 2012
+  - https://doi.org/10.1093/database/baw117 # alternative ref strains, Database 2016
+related_resources:
+  - yeast_1002
+notes: |
+  Canonical authority for S. cerevisiae gene names, annotations, and
+  phenotypes. The "Mammalian-style" Yeast Phenotype Ontology makes
+  cross-species disease-model inference tractable. For natural-variation
+  genotype data across thousands of strains, pair with [[yeast_1002]].
+last_verified: 2026-05-13

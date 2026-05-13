@@ -1,0 +1,49 @@
+name: Mouse Phenome Database (MPD)
+short_id: mpd
+url: https://phenome.jax.org/
+provider: The Jackson Laboratory; NIH/NIDA/NIA
+species:
+  - Mus musculus
+taxonomy_ids:
+  - 10090
+research_themes:
+  - quantitative_genetics
+  - phenotype_diversity
+  - gwas
+  - aging
+  - behavior_genetics
+data_modalities:
+  - quantitative_phenotypes   # ~5,000+ measured traits
+  - genotypes                 # array + WGS for many strains
+  - individual_animal_data
+  - protocols
+  - eqtl_data                 # via linked studies
+access_mode:
+  - public_open
+access_details: |
+  Open, no registration.
+    - Portal: https://phenome.jax.org/
+    - Individual-animal-level data downloadable as CSV.
+    - REST API for trait/strain queries.
+    - SNP retrieval in .csv format across inbred and recombinant inbred
+      panels (BXD, Collaborative Cross, Diversity Outbred).
+size: |
+  Data from >6,000 mouse strains and populations (inbred, recombinant inbred,
+  Collaborative Cross [CC], Diversity Outbred [DO], wild-derived).
+  Thousands of quantitative phenotypes covering aging, behavior,
+  metabolism, blood chemistry, pharmacology, immunology, and more.
+counts:
+  strains: 6000
+  species: 1
+last_updated: 2026
+citation:
+  - https://doi.org/10.1093/nar/gkz1108    # MPD NAR 2020
+related_resources:
+  - mgi
+  - impc
+notes: |
+  Use MPD for quantitative cross-strain trait data — the natural
+  complement to MGI's qualitative allele-phenotype catalog and IMPC's
+  systematic single-gene KO screens. The Collaborative Cross and Diversity
+  Outbred datasets here support mouse GWAS (eQTL, pQTL, behavior QTL).
+last_verified: 2026-05-13

@@ -1,0 +1,48 @@
+name: 1001 Genomes Project — Arabidopsis thaliana
+short_id: arabidopsis_1001
+url: https://1001genomes.org/
+provider: Salk Institute; MPI Tübingen; Gregor Mendel Institute; international consortium
+species:
+  - Arabidopsis thaliana
+taxonomy_ids:
+  - 3702
+research_themes:
+  - plant_genomics
+  - population_genetics
+  - gwas
+  - reference_panel
+data_modalities:
+  - wgs                # whole-genome resequencing
+  - snps
+  - indels
+  - structural_variants
+  - phenotypes         # flowering time, disease resistance, ionomics, etc.
+access_mode:
+  - public_open
+access_details: |
+  Fully open, no registration.
+    - Data Center: https://1001genomes.org/data-center.html
+    - Polymorph variant browser, Pseudogenomes Tool, GWAS Tools (e.g. AraGWAS Catalog
+      https://aragwas.1001genomes.org/).
+    - Salk-hosted "1001 Genomes" portal mirror: http://signal.salk.edu/atg1001/
+    - VCF/BAM/FASTQ downloads via the Data Center and ENA.
+  Phenotype data linked through AraPheno (https://arapheno.1001genomes.org/) —
+  hundreds of phenotypes measured across the same accessions, enabling GWAS.
+size: |
+  1,135 natural Arabidopsis thaliana accessions sequenced (Phase 1, 2016).
+  ~5,000,000 SNPs + millions of indels + thousands of structural variants
+  identified by alignment to the Col-0 reference (TAIR10/Araport11).
+counts:
+  individuals: 1135           # accessions (lines)
+  snvs: 5000000
+  species: 1
+last_updated: 2016    # main release; ongoing add-ons via AraGWAS / AraPheno
+citation:
+  - https://doi.org/10.1016/j.cell.2016.05.063   # Cell 2016 — 1135 genomes
+related_resources:
+  - aragwas
+notes: |
+  The largest open natural-variation panel for any plant species; AraGWAS
+  Catalog and AraPheno provide harmonized GWAS results and phenotype data,
+  making Arabidopsis the most tractable plant for genotype↔phenotype work.
+last_verified: 2026-05-13

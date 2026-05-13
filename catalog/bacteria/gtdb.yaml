@@ -1,0 +1,49 @@
+name: Genome Taxonomy Database (GTDB)
+short_id: gtdb
+url: https://gtdb.ecogenomic.org/
+provider: Australian Centre for Ecogenomics, University of Queensland (Hugenholtz Lab)
+species:
+  - Bacteria
+  - Archaea
+research_themes:
+  - microbial_taxonomy
+  - phylogenomics
+  - metagenomics
+  - comparative_genomics
+data_modalities:
+  - reference_genomes
+  - species_trees       # bac120 + ar53 marker concatenations
+  - taxonomy_assignments
+  - genome_quality_metadata
+  - mash_distances
+access_mode:
+  - public_open
+access_details: |
+  Fully open, no registration.
+    - Browser + downloads: https://gtdb.ecogenomic.org/
+    - GTDB-Tk: command-line toolkit for placing user genomes into the GTDB
+      tree (https://github.com/Ecogenomics/GTDBTk).
+    - Species-representative genomes (1 per species), full Newick trees per
+      domain, TSV metadata tables.
+size: |
+  Release 11-RS232 (April 2026): 901,341 genomes in total —
+  878,998 bacterial and 22,343 archaeal. Quality-filtered, dereplicated to
+  ANI-defined species clusters; ~80,000 species representatives.
+counts:
+  bacterial_genomes: 878998
+  archaeal_genomes: 22343
+  genomes: 901341
+  species: 80000
+last_updated: 2026-04   # release 11-RS232
+citation:
+  - https://doi.org/10.1093/nar/gkaf1040    # GTDB r10, NAR 2026 (advance)
+  - https://doi.org/10.1093/nar/gkab776     # GTDB r207, NAR 2022
+related_resources:
+  - jgi
+  - bv_brc
+notes: |
+  Phylogenomics-based taxonomy that often disagrees with NCBI taxonomy;
+  many downstream tools (e.g., GTDB-Tk, sourmash gather) use it as the
+  default reference. Choose GTDB for objective ANI-based species
+  definitions; NCBI for legacy nomenclature.
+last_verified: 2026-05-13

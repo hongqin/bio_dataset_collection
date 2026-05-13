@@ -1,0 +1,64 @@
+name: Animal QTL Database (Animal QTLdb)
+short_id: animal_qtldb
+url: https://www.animalgenome.org/cgi-bin/QTLdb/index
+provider: Iowa State University (Hu, Reecy labs); USDA NRSP-8
+species:
+  - Bos taurus              # cattle
+  - Sus scrofa              # pig
+  - Gallus gallus           # chicken
+  - Ovis aries              # sheep
+  - Equus caballus          # horse
+  - Capra hircus            # goat
+  - Oncorhynchus mykiss     # rainbow trout
+taxonomy_ids:
+  - 9913
+  - 9823
+  - 9031
+  - 9940
+  - 9796
+  - 9925
+  - 8022
+research_themes:
+  - livestock_genomics
+  - quantitative_trait_loci
+  - animal_breeding
+  - production_traits
+  - gwas
+data_modalities:
+  - qtl                  # linkage QTL
+  - gwas_associations    # SNP-trait associations
+  - eqtl
+  - trait_metadata
+access_mode:
+  - public_open
+access_details: |
+  Free, no registration.
+    - Web UI: https://www.animalgenome.org/cgi-bin/QTLdb/index
+    - Per-species download pages with TSV/BED/GFF exports.
+    - Companion CorrDB (correlations) and Pig QTLdb-archive.
+size: |
+  ~158,500 QTL/association records as of recent releases, distributed
+  across the seven livestock species. Approximate per-species counts
+  (historical, growing):
+    - Cattle: ~120,000 records
+    - Pig:    ~30,000 records
+    - Chicken: ~10,000 records  (3,442 historical entries; expanded)
+    - Sheep:   ~2,000 records
+    - Rainbow trout, horse, goat: smaller but present.
+counts:
+  qtl_associations: 158500
+  species: 7
+  qtl_chicken: 10000
+  qtl_cattle: 120000
+  qtl_pig: 30000
+last_updated: 2026
+citation:
+  - https://doi.org/10.1093/nar/gks1150    # Animal QTLdb, NAR 2013
+related_resources:
+  - gwas_catalog
+notes: |
+  Best single source for chicken QTLs (production, disease-resistance,
+  behavior) and other livestock — there is no chicken-only resource of
+  comparable depth. Pair with Ensembl genome annotations for
+  variant-to-gene mapping in livestock species.
+last_verified: 2026-05-13

@@ -1,0 +1,53 @@
+name: Mouse Genome Informatics (MGI)
+short_id: mgi
+url: https://www.informatics.jax.org/
+provider: The Jackson Laboratory; NIH/NHGRI
+species:
+  - Mus musculus
+taxonomy_ids:
+  - 10090
+research_themes:
+  - model_organism
+  - functional_genomics
+  - phenotype_ontology
+  - disease_models
+  - gene_annotation
+data_modalities:
+  - gene_annotation
+  - mutant_alleles
+  - phenotype_annotations    # Mammalian Phenotype Ontology
+  - human_disease_models     # mouse ↔ human disease mappings
+  - genetic_interactions
+  - expression_data
+access_mode:
+  - public_open
+access_details: |
+  Fully open, no registration.
+    - Portal: https://www.informatics.jax.org/
+    - Bulk downloads + 75+ weekly-regenerated reports:
+      https://www.informatics.jax.org/downloads/reports/index.html
+    - Batch query + REST APIs.
+    - Cross-organism data also surfaced via the Alliance of Genome Resources
+      (https://www.alliancegenome.org/).
+size: |
+  ~50,000 curated mutant alleles with phenotype annotations using the
+  Mammalian Phenotype Ontology; experimental model descriptions for
+  >1,500 human diseases (OMIM/Mondo mapped); ~24,000 protein-coding
+  mouse genes in the C57BL/6J reference (GRCm39).
+counts:
+  protein_coding_genes: 24000
+  alleles_curated: 50000
+  human_diseases_modeled: 1500
+  species: 1
+last_updated: 2026     # continuous curation
+citation:
+  - https://doi.org/10.1093/genetics/iyae031   # MGI overview, Genetics 2024
+related_resources:
+  - impc
+  - mpd
+notes: |
+  Canonical authority for mouse gene nomenclature, alleles, and curated
+  phenotype-to-disease mapping. Use MGI to interpret what a given mouse
+  KO is known to do; use [[impc]] for systematic primary phenotype data;
+  use [[mpd]] for quantitative cross-strain trait measurements.
+last_verified: 2026-05-13

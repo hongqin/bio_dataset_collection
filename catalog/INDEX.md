@@ -3,7 +3,8 @@
 Human-readable index of resources catalogued under `catalog/`. Each row links
 to the structured YAML file that is the source of truth. See
 [`schema.yaml`](schema.yaml) for field definitions and the controlled
-vocabularies for `access_mode`, `research_themes`, and `data_modalities`.
+vocabularies for `access_mode`, `research_themes`, `data_modalities`, and
+the structured `counts:` map (for sortable scale comparisons).
 
 Entries are organized first by **species**, then sorted so that the **most
 openly accessible** resources appear at the top of each table — public-open
@@ -22,9 +23,9 @@ first, then tiered, then controlled.
 | [HGDP + harmonized 1kGP+HGDP](https://www.internationalgenome.org/data-portal/data-collection/hgdp) | 929 HGDP genomes; 4,094 harmonized 30x WGS | diversity panel, human evolution | [`human/hgdp.yaml`](human/hgdp.yaml) |
 | [NHGRI-EBI GWAS Catalog](https://www.ebi.ac.uk/gwas/) | 85k+ summary-stats files across 5,000+ traits | GWAS, polygenic risk, phenotype ontology | [`human/gwas_catalog.yaml`](human/gwas_catalog.yaml) |
 | [Pan-UK Biobank](https://pan.ukbb.broadinstitute.org/) | 16,131 GWAS × 6 ancestries × 7,228 phenotypes | multi-ancestry GWAS | [`human/pan_ukbb.yaml`](human/pan_ukbb.yaml) |
-| [Open Targets Platform](https://platform.opentargets.org/) | target–disease evidence, L2G, GWAS coloc (CC0) | drug discovery, variant-to-function | [`human/open_targets.yaml`](human/open_targets.yaml) |
+| [Open Targets Platform](https://platform.opentargets.org/) | 63k targets × 28k diseases (CC0) | drug discovery, variant-to-function | [`human/open_targets.yaml`](human/open_targets.yaml) |
 | [BioBank Japan PheWeb](https://pheweb.jp/) | hundreds of phenotype GWAS in Japanese ancestry | East Asian population genetics, cardiometabolic | [`human/biobank_japan.yaml`](human/biobank_japan.yaml) |
-| [SEA-AD](https://portal.brain-map.org/explore/seattle-alzheimers-disease) | snRNA-seq + snATAC-seq + MERFISH + neuropathology from ~80 AD-continuum brains | single-cell, Alzheimer's disease | [`human/sea_ad.yaml`](human/sea_ad.yaml) |
+| [SEA-AD](https://portal.brain-map.org/explore/seattle-alzheimers-disease) | ~84 donors, ~2.9M nuclei (snRNA + snATAC + MERFISH) | single-cell, Alzheimer's disease | [`human/sea_ad.yaml`](human/sea_ad.yaml) |
 
 ### Tiered (public summary + controlled individual-level)
 
@@ -47,6 +48,51 @@ first, then tiered, then controlled.
 
 ---
 
+## Mouse (*Mus musculus*)
+
+| Resource | Data | Themes | File |
+|---|---|---|---|
+| [MGI](https://www.informatics.jax.org/) | ~50k curated alleles, 1,500+ disease models, gene nomenclature | functional genomics, model organism | [`mouse/mgi.yaml`](mouse/mgi.yaml) |
+| [IMPC](https://www.mousephenotype.org/) | systematic KO phenotyping; 85M data points, 9,000+ genes phenotyped | knockout phenotyping, disease models | [`mouse/impc.yaml`](mouse/impc.yaml) |
+| [Mouse Phenome Database](https://phenome.jax.org/) | quantitative phenotypes across >6,000 strains (CC, DO, inbred) | quantitative genetics, GWAS, aging | [`mouse/mpd.yaml`](mouse/mpd.yaml) |
+
+---
+
+## Chicken (*Gallus gallus*) and other livestock
+
+| Resource | Data | Themes | File |
+|---|---|---|---|
+| [Animal QTLdb](https://www.animalgenome.org/cgi-bin/QTLdb/index) | ~158,500 QTL/association records across cattle, pig, **chicken**, sheep, horse, goat, trout | livestock genomics, animal breeding | [`multi_species/animal_qtldb.yaml`](multi_species/animal_qtldb.yaml) |
+
+---
+
+## Plants
+
+| Resource | Species | Data | File |
+|---|---|---|---|
+| [1001 Genomes](https://1001genomes.org/) | *Arabidopsis thaliana* | 1,135 accessions, ~5M SNPs + AraPheno phenotypes | [`plants/arabidopsis_1001.yaml`](plants/arabidopsis_1001.yaml) |
+| [3000 Rice Genomes](https://iric.irri.org/projects/3000-rice-genomes-project) | *Oryza sativa* | 3,024 accessions from 89 countries, ~20M SNPs | [`plants/rice_3000.yaml`](plants/rice_3000.yaml) |
+
+---
+
+## Yeast (*Saccharomyces cerevisiae*)
+
+| Resource | Data | Themes | File |
+|---|---|---|---|
+| [SGD](https://www.yeastgenome.org/) | reference genome + curated phenotype/GO/interaction annotations | functional genomics, phenotype ontology | [`yeast/sgd.yaml`](yeast/sgd.yaml) |
+| [1002 Yeast Genomes](http://1002genomes.u-strasbg.fr/) | 1,011 natural isolates resequenced + high-throughput phenotyping | population genetics, GWAS | [`yeast/yeast_1002.yaml`](yeast/yeast_1002.yaml) |
+
+---
+
+## Bacteria & archaea
+
+| Resource | Data | Themes | File |
+|---|---|---|---|
+| [GTDB](https://gtdb.ecogenomic.org/) | 901,341 genomes (878,998 bacterial + 22,343 archaeal), phylogenomic taxonomy | microbial taxonomy, phylogenomics | [`bacteria/gtdb.yaml`](bacteria/gtdb.yaml) |
+| [BV-BRC](https://www.bv-brc.org/) | 1.3M bacterial + 15M viral genomes with consistent RASTtk annotation + AMR | infectious disease, AMR, pathogen surveillance | [`bacteria/bv_brc.yaml`](bacteria/bv_brc.yaml) |
+
+---
+
 ## Dog (*Canis lupus familiaris*)
 
 | Resource | Access | Themes | File |
@@ -56,7 +102,7 @@ first, then tiered, then controlled.
 
 ---
 
-## Microbes & viruses
+## Microbes & viruses (pathogen-focused)
 
 | Resource | Access | Themes | File |
 |---|---|---|---|
@@ -70,6 +116,7 @@ first, then tiered, then controlled.
 |---|---|---|---|
 | [DOE JGI](https://data.jgi.doe.gov/) | public, click-through data-use policy | microbial/fungal/plant genomics, metagenomics, bioenergy | [`multi_species/jgi.yaml`](multi_species/jgi.yaml) |
 | [GGBN + Smithsonian GGI](https://www.ggbn.org/) | metadata public; physical samples via MTA | biodiversity genomics, conservation, taxonomy | [`multi_species/ggbn.yaml`](multi_species/ggbn.yaml) |
+| [Animal QTLdb](https://www.animalgenome.org/cgi-bin/QTLdb/index) | public | livestock QTL across 7 species | [`multi_species/animal_qtldb.yaml`](multi_species/animal_qtldb.yaml) |
 
 ---
 

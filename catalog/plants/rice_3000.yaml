@@ -1,0 +1,48 @@
+name: 3000 Rice Genomes Project (3K RGP) / SNP-Seek
+short_id: rice_3000
+url: https://iric.irri.org/projects/3000-rice-genomes-project
+provider: International Rice Research Institute (IRRI); Chinese Academy of Agricultural Sciences; BGI
+species:
+  - Oryza sativa
+taxonomy_ids:
+  - 4530
+research_themes:
+  - plant_genomics
+  - crop_breeding
+  - population_genetics
+  - gwas
+  - food_security
+data_modalities:
+  - wgs                # high-coverage resequencing
+  - snps
+  - phenotypes         # IRRI core collection trait data
+  - germplasm_metadata
+access_mode:
+  - public_open
+access_details: |
+  Released as a "global public good" since 2014.
+    - IRRI page: https://iric.irri.org/projects/3000-rice-genomes-project
+    - SNP-Seek database: https://snp-seek.irri.org/ (intermittent uptime due
+      to IRRI funding constraints; check status before scripting).
+    - AWS Open Data: https://registry.opendata.aws/3kricegenome/
+    - DOST-ASTI COARE Data Catalog mirror.
+  ~120 TB of raw + processed data on AWS.
+size: |
+  3,024 rice accessions (Oryza sativa) from 89 countries, resequenced.
+  Approximately 20,000,000 SNPs identified against the Nipponbare reference.
+counts:
+  individuals: 3024
+  countries: 89
+  snvs: 20000000
+  species: 1
+last_updated: 2018
+citation:
+  - https://doi.org/10.1038/s41586-018-0063-9   # 3K Rice Genomes, Nature 2018
+related_resources:
+  - arabidopsis_1001
+notes: |
+  Largest open variation resource for rice. Strong genotype + germplasm
+  metadata; phenotype data is more fragmented (IRRI core collection traits
+  + downstream GWAS publications) than for Arabidopsis. Heavy use in
+  marker-assisted breeding programs.
+last_verified: 2026-05-13

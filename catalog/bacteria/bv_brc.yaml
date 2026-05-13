@@ -1,0 +1,54 @@
+name: Bacterial and Viral Bioinformatics Resource Center (BV-BRC)
+short_id: bv_brc
+url: https://www.bv-brc.org/
+provider: NIAID; University of Chicago; University of Virginia (Biocomplexity); J. Craig Venter Institute
+species:
+  - Bacteria
+  - Archaea
+  - DNA and RNA viruses
+research_themes:
+  - infectious_disease
+  - bacterial_genomics
+  - viral_genomics
+  - antimicrobial_resistance
+  - pathogen_surveillance
+data_modalities:
+  - reference_genomes
+  - annotations          # RASTtk pipeline
+  - amr_phenotypes
+  - host_range_metadata
+  - protein_families
+  - epidemiological_data
+access_mode:
+  - public_open
+  - registration_required    # only for workspace + compute services
+access_details: |
+  All public data is free to browse, search, and download — no account
+  needed. A free account is required only to use the cloud workspace,
+  bioinformatic services (assembly, annotation, phylogeny, AMR
+  prediction), and to upload private data.
+    - Portal: https://www.bv-brc.org/
+    - Account: free, immediate; ~35,000 registered users.
+  BV-BRC superseded PATRIC, IRD, and ViPR in 2022.
+size: |
+  ~1,300,000 bacterial genomes (annotated with RASTtk) and ~15,000,000
+  viral genomes; >1,200,000 private user genomes also hosted (not in the
+  public counts).
+counts:
+  bacterial_genomes: 1300000
+  viral_genomes: 15000000
+  genomes: 16300000
+  registered_users: 35000
+last_updated: 2026
+citation:
+  - https://doi.org/10.1093/nar/gkac1003   # BV-BRC, NAR 2023
+related_resources:
+  - gtdb
+  - jgi
+  - gisaid
+notes: |
+  Strongest single resource for pathogen genomics + AMR. Genomes are
+  consistently re-annotated, so cross-genome comparisons are coherent
+  in a way they aren't on NCBI alone. Funded by NIAID; viral coverage
+  complements (not replaces) GISAID for outbreak-time data.
+last_verified: 2026-05-13

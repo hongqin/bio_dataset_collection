@@ -1,0 +1,44 @@
+name: 1002 Yeast Genomes Project
+short_id: yeast_1002
+url: http://1002genomes.u-strasbg.fr/
+provider: Schacherer Lab (Université de Strasbourg); Liti Lab (IRCAN Nice); Genoscope; France Génomique
+species:
+  - Saccharomyces cerevisiae
+taxonomy_ids:
+  - 4932
+research_themes:
+  - population_genetics
+  - model_organism
+  - gwas
+  - quantitative_trait_genetics
+data_modalities:
+  - wgs                # Illumina HiSeq high-coverage
+  - snps
+  - svs
+  - phenotypes         # high-throughput growth on hundreds of conditions
+access_mode:
+  - public_open
+access_details: |
+  Open data; genomes available on the project site, ENA/SRA (PRJEB13017),
+  and CNGBdb (mirror).
+    - Project site: http://1002genomes.u-strasbg.fr/
+    - ENA bioproject: https://www.ebi.ac.uk/ena/browser/view/PRJEB13017
+    - CNGBdb mirror: https://db.cngb.org/data_resources/project/PRJEB13017
+size: |
+  1,011 natural Saccharomyces cerevisiae isolates from ~21 ecological /
+  geographic niches sequenced to high coverage; high-throughput phenotyping
+  on hundreds of growth conditions. (1,026 genomes obtained in total.)
+counts:
+  individuals: 1011            # strains
+  individuals_total: 1026
+  species: 1
+last_updated: 2018
+citation:
+  - https://doi.org/10.1038/s41586-018-0030-5   # Peter et al., Nature 2018
+related_resources:
+  - sgd
+notes: |
+  Population-scale catalog of natural yeast variation — analogous to the
+  1001 Genomes Project for Arabidopsis. Enables yeast GWAS for growth,
+  drug resistance, and metabolic traits.
+last_verified: 2026-05-13
