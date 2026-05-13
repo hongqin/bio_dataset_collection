@@ -1,0 +1,43 @@
+name: 1000 Genomes Project / International Genome Sample Resource (IGSR)
+short_id: 1000_genomes
+url: https://www.internationalgenome.org/
+provider: IGSR at EMBL-EBI; NYGC; international consortium
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - genomics
+  - population_genetics
+  - structural_variation
+  - reference_panel
+data_modalities:
+  - wgs              # 30x high-coverage from NYGC, GRCh38
+  - genotyping
+  - phased_haplotypes
+  - structural_variants
+access_mode:
+  - public_open
+access_details: |
+  Fully open, no registration or use restrictions. Cell lines available via
+  Coriell; corresponding genomic data from EMBL-EBI and NCBI FTP, AWS Open
+  Data, AnVIL, Globus, Aspera.
+    - Portal: https://www.internationalgenome.org/data/
+    - FTP: ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/
+    - AWS Open Data: s3://1000genomes
+  NYGC re-sequenced 3,202 samples (incl. 602 trios) to 30x coverage on
+  GRCh38; CRAMs and joint-called VCFs are public.
+size: 3,202 samples (incl. 602 trios), 26 populations across 5 super-populations
+last_updated: 2023
+citation:
+  - https://doi.org/10.1038/nature15393         # 1000G phase 3, Nature 2015
+  - https://doi.org/10.1016/j.cell.2022.08.004  # NYGC high-coverage, Cell 2022
+related_resources:
+  - hgdp
+  - gnomad
+notes: |
+  Foundational open reference for human genetic variation, widely used for
+  imputation reference panels, ancestry inference, and population structure.
+  Phenotype data is limited to ancestry/population labels — no medical
+  phenotypes — so pair with phenotype-rich resources for trait analysis.
+last_verified: 2026-05-13

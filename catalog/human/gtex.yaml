@@ -1,0 +1,43 @@
+name: Genotype-Tissue Expression (GTEx) Project
+short_id: gtex
+url: https://www.gtexportal.org/
+provider: NIH Common Fund; Broad Institute coordinating center
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - genomics
+  - transcriptomics
+  - functional_genomics
+  - eqtl
+data_modalities:
+  - wgs              # individual-level, via dbGaP
+  - bulk_rnaseq      # 54 tissues, ~17k samples
+  - scrnaseq         # GTEx single-cell pilot
+  - eqtl_summary     # cis/trans eQTLs and sQTLs
+  - imaging_histology # tissue H&E slides
+access_mode:
+  - tiered
+  - public_open               # summary expression + QTL data
+  - controlled_access_dac     # raw sequencing + individual genotypes via dbGaP
+access_details: |
+  Two tiers:
+    1. OPEN — gene/transcript expression matrices, eQTL/sQTL summary stats,
+       median expression by tissue, histology images: free download via
+       https://www.gtexportal.org/home/datasets and API. CC-BY equivalent.
+    2. CONTROLLED — individual-level genotypes, RNA-seq BAMs/FASTQs: via
+       dbGaP study phs000424 with DAC approval. NIH policy prevents release
+       of raw sequence via the portal.
+size: ~17,000 RNA-seq samples from 54 tissues across ~1,000 donors (GTEx v8)
+last_updated: 2020   # v8 stable release; v9 in progress
+citation:
+  - https://doi.org/10.1126/science.aaz1776   # GTEx v8, Science 2020
+related_resources:
+  - dbgap
+notes: |
+  Premier resource for tissue-specific gene expression and eQTLs. The OPEN
+  tier alone is sufficient for most variant-to-function and target-validation
+  workflows; only request controlled access if you need individual-level
+  joint analysis.
+last_verified: 2026-05-13

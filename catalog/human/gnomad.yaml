@@ -1,0 +1,46 @@
+name: Genome Aggregation Database (gnomAD)
+short_id: gnomad
+url: https://gnomad.broadinstitute.org/
+provider: Broad Institute (international consortium)
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - genomics
+  - population_genetics
+  - variant_interpretation
+  - rare_disease
+data_modalities:
+  - wgs              # ~76k genomes in v4
+  - wes              # ~730k exomes in v4
+  - allele_frequency
+  - variant_annotation
+access_mode:
+  - public_open
+access_details: |
+  All summary-level data (allele frequencies, variant annotations, constraint
+  metrics, structural variants, copy-number variants) are public — no
+  registration required.
+    - Browser: https://gnomad.broadinstitute.org/
+    - Downloads (VCF / Hail / Parquet on GCS, AWS, Azure):
+      https://gnomad.broadinstitute.org/downloads
+    - API and BigQuery mirrors available.
+  Note: Individual-level genotypes for the constituent cohorts are NOT in
+  gnomAD; only aggregated summary stats. Underlying raw sequencing data for
+  many contributing studies is on dbGaP/AnVIL (controlled access).
+size: v4.1 — 730,947 exomes + 76,215 genomes; 62.9M SNVs + 6.2M indels passing filters
+last_updated: 2024-04   # v4.1
+citation:
+  - https://doi.org/10.1038/s41586-020-2308-7   # gnomAD flagship, Nature 2020
+  - https://gnomad.broadinstitute.org/news/2023-11-gnomad-v4-0/
+  - https://doi.org/10.1038/s41467-025-63340-2  # local ancestry inference v4
+related_resources:
+  - 1000_genomes
+notes: |
+  Most widely used resource for variant population frequencies in clinical
+  variant interpretation (ACMG/AMP PM2/BS1). v4 added local-ancestry-aware
+  allele frequencies for admixed populations. Cohorts include UK Biobank,
+  All of Us, gnomAD-Latino/AMR-enriched samples; phenotype-positive cohorts
+  excluded so AFs represent population background.
+last_verified: 2026-05-13

@@ -1,0 +1,41 @@
+name: NHGRI-EBI GWAS Catalog
+short_id: gwas_catalog
+url: https://www.ebi.ac.uk/gwas/
+provider: NHGRI (NIH) and EMBL-EBI
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - genomics
+  - gwas
+  - phenotype_ontology
+  - polygenic_risk
+data_modalities:
+  - gwas_summary_statistics
+  - curated_associations
+  - trait_metadata
+access_mode:
+  - public_open
+access_details: |
+  Fully open, no registration.
+    - Web browser and TSV download of curated lead variants:
+      https://www.ebi.ac.uk/gwas/
+    - REST API (curated): https://www.ebi.ac.uk/gwas/rest/api
+    - Full summary statistics (where deposited) on FTP, with dedicated API:
+      https://www.ebi.ac.uk/gwas/summary-statistics/api
+  Trait curation uses the Experimental Factor Ontology (EFO) for harmonization.
+size: >45,000 published GWAS, >5,000 traits, >85,000 full summary-statistics files (2024+)
+last_updated: 2026
+citation:
+  - https://doi.org/10.1093/nar/gkac1010   # NAR 2023
+  - https://doi.org/10.1038/s41586-024-08600-3   # standards 2024
+related_resources:
+  - open_targets
+  - pan_ukbb
+notes: |
+  Canonical entry point for finding GWAS hits for any trait. Use for
+  fine-mapping inputs, PRS development, Mendelian randomization, and
+  cross-trait colocalization. Summary statistics deposition is now expected
+  for new GWAS publications.
+last_verified: 2026-05-13

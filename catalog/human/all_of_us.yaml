@@ -1,0 +1,55 @@
+name: All of Us Research Program
+short_id: all_of_us
+url: https://www.researchallofus.org/
+provider: NIH (All of Us Research Program); Vanderbilt, Broad, Verily, others
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - genomics
+  - clinical_ehr
+  - precision_medicine
+  - diverse_ancestry
+  - social_determinants_of_health
+data_modalities:
+  - wgs                  # ~245k participants (CDRv8)
+  - genotyping           # ~315k participants
+  - ehr
+  - survey
+  - wearable             # Fitbit
+  - physical_measurements
+  - environmental
+access_mode:
+  - tiered
+  - public_open               # Public Tier (aggregate)
+  - controlled_access_dac     # Registered + Controlled Tiers
+  - irb_required              # institution-level DUA + training
+access_details: |
+  Three tiers:
+    1. PUBLIC — aggregate counts and Data Browser (no PII, no individual-
+       level data). No registration: https://databrowser.researchallofus.org/
+    2. REGISTERED — individual-level survey, EHR, wearable, physical-measure
+       data on the Researcher Workbench. Requires: institutional DUA,
+       identity verification (Login.gov / ID.me), RCR training, Data User
+       Code of Conduct.
+    3. CONTROLLED — adds WGS and genotyping array data, restricted demographic
+       fields, unshifted event dates. Additional approval step.
+  All analysis happens inside the cloud Workbench; bulk download of
+  individual-level data is not permitted.
+size: ~800,000 enrolled; ~245,000 WGS, ~315,000 genotyped (CDRv8, 2025)
+last_updated: 2025   # CDRv8
+citation:
+  - https://doi.org/10.1056/NEJMsr1809937       # NEJM 2019, program design
+  - https://doi.org/10.1038/s41586-023-06957-x  # All of Us genomics, Nature 2024
+related_resources:
+  - gnomad
+  - pan_ukbb
+notes: |
+  Strong representation of communities historically underrepresented in
+  biomedical research (>45% non-European ancestry, >75% from groups
+  underrepresented in biomedical research broadly defined). The Public
+  Tier alone supports prevalence/exploratory queries; full genotype+
+  phenotype work requires Controlled Tier access through an affiliated
+  institution.
+last_verified: 2026-05-13

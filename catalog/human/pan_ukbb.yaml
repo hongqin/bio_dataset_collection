@@ -1,0 +1,40 @@
+name: Pan-UK Biobank (Pan-UKBB)
+short_id: pan_ukbb
+url: https://pan.ukbb.broadinstitute.org/
+provider: Broad Institute; Neale, Martin, Finucane, Daly labs
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - genomics
+  - gwas
+  - population_genetics
+  - multi_ancestry_analysis
+data_modalities:
+  - gwas_summary_statistics
+  - per_ancestry_meta_analyses
+  - heritability_estimates
+access_mode:
+  - public_open
+access_details: |
+  Summary statistics are fully open — no UK Biobank application required
+  for the GWAS results themselves.
+    - Browser + downloads: https://pan.ukbb.broadinstitute.org/
+    - AWS Open Data mirror: s3://broad-pan-ukb
+    - Sample metadata via UKB showcase return 2442.
+  Individual-level UK Biobank data remains controlled-access via UKB
+  application (separate process).
+size: 16,131 GWAS across 7,228 phenotypes × 6 continental ancestry groups
+last_updated: 2024
+citation:
+  - https://doi.org/10.1038/s41588-025-02335-7   # Nat Genet 2025
+related_resources:
+  - gwas_catalog
+  - finngen
+notes: |
+  Multi-ancestry UK Biobank GWAS results released openly for the community.
+  Companion to (but distinct from) the older Neale-lab UK Biobank GWAS
+  release (~4,000 phenotypes, European-only). Use Pan-UKBB for cross-ancestry
+  meta-analysis, PRS portability studies, and admixed-population fine-mapping.
+last_verified: 2026-05-13

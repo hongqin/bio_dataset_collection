@@ -1,0 +1,46 @@
+name: BioBank Japan (BBJ)
+short_id: biobank_japan
+url: https://biobankjp.org/en/
+provider: Institute of Medical Science, University of Tokyo; RIKEN; AMED
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - genomics
+  - gwas
+  - clinical_ehr
+  - east_asian_population_genetics
+  - cardiometabolic_disease
+data_modalities:
+  - genotyping
+  - imputed_genotypes
+  - gwas_summary_statistics
+  - clinical_phenotypes
+  - biomarkers
+access_mode:
+  - tiered
+  - public_open               # summary statistics via PheWeb
+  - controlled_access_dac     # individual-level via NBDC / JGA / EGA
+access_details: |
+  Two tiers:
+    1. OPEN — full GWAS summary statistics for hundreds of phenotypes
+       publicly downloadable from BioBank Japan PheWeb (https://pheweb.jp/),
+       Jenger (http://jenger.riken.jp/en/), and AGD; no application required.
+    2. CONTROLLED — individual-level genotype + phenotype data via
+       NBDC Human Database (Japan) and the European Genome-Phenome Archive
+       study JGAS000114. DAC review required.
+size: ~260,000 Japanese participants from 12 medical institutions; ~47 target diseases
+last_updated: 2024
+citation:
+  - https://doi.org/10.1016/j.je.2017.02.003   # BBJ profile, J Epidemiol 2017
+  - https://doi.org/10.1038/s41588-021-00931-x # BBJ pan-disease GWAS, Nat Genet 2021
+related_resources:
+  - pan_ukbb
+  - finngen
+  - gwas_catalog
+notes: |
+  Largest publicly available East Asian GWAS resource. Essential for trans-
+  ancestry meta-analysis, ancestry-aware fine-mapping, and PRS portability
+  studies. Phenotypes are disease-focused (cardiometabolic, cancer, immune).
+last_verified: 2026-05-13

@@ -1,0 +1,42 @@
+name: Human Genome Diversity Project (HGDP) + Harmonized 1kGP+HGDP
+short_id: hgdp
+url: https://www.internationalgenome.org/data-portal/data-collection/hgdp
+provider: CEPH (Paris); Stanford Rosenberg lab; Sanger Institute; gnomAD team for harmonized release
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - genomics
+  - population_genetics
+  - human_evolution
+  - diversity_panel
+data_modalities:
+  - wgs              # 30x high-coverage, GRCh38
+  - genotyping
+  - phased_haplotypes
+access_mode:
+  - public_open
+access_details: |
+  Fully open.
+    - IGSR HGDP collection: https://www.internationalgenome.org/data-portal/data-collection/hgdp
+    - Stanford Rosenberg lab SNP data (light registration page):
+      https://rosenberglab.stanford.edu/diversity.html
+    - CEPH-HGDP central DB: https://cephb.fr/en/hgdp_panel.php
+    - Harmonized 1kGP+HGDP release (4,094 genomes, 153M variants) via gnomAD:
+      https://gnomad.broadinstitute.org/downloads#v3-hgdp-1kg
+size: 929 individuals from 54 worldwide populations; harmonized release 4,094 genomes when combined with 1kGP
+last_updated: 2024
+citation:
+  - https://doi.org/10.1126/science.aay5012     # HGDP high-coverage, Science 2020
+  - https://doi.org/10.1101/gr.278378.123       # Harmonized resource, Genome Res 2024
+related_resources:
+  - 1000_genomes
+  - gnomad
+notes: |
+  Sampling captures populations underrepresented in 1000 Genomes
+  (Native American, Oceanian, Siberian, sub-Saharan African isolates).
+  Recent Nature Genetics 2025 paper discusses governance issues around
+  legacy consent — researchers should consider community-engagement norms
+  when publishing on specific populations.
+last_verified: 2026-05-13

@@ -1,0 +1,47 @@
+name: FinnGen
+short_id: finngen
+url: https://www.finngen.fi/
+provider: University of Helsinki, Finnish biobanks, pharmaceutical consortium
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - genomics
+  - gwas
+  - clinical_ehr
+  - population_genetics
+  - drug_target_discovery
+data_modalities:
+  - genotyping
+  - imputed_genotypes
+  - ehr                # Finnish national health registries
+  - gwas_summary_statistics
+  - lab_values
+access_mode:
+  - tiered
+  - public_open               # summary statistics + browser
+  - controlled_access_dac     # individual-level data via Finnish biobanks
+access_details: |
+  Two tiers:
+    1. OPEN — GWAS summary statistics and a Pheweb-style results browser
+       are publicly available. Researchers fill an online access form to
+       receive download links (Google Cloud Storage); no fee, no DAC review.
+       Browser: https://r12.finngen.fi/
+       Access form: https://www.finngen.fi/en/access_results
+    2. CONTROLLED — individual-level genotype + EHR data requires a project
+       application through Finnish biobanks (FinBB / Fingenious).
+size: ~500,000 Finnish participants genotyped + linked national health registries (final dataset Sep 2023)
+last_updated: 2025-10   # latest freeze incl. 383 lab-value GWAS
+citation:
+  - https://doi.org/10.1038/s41586-022-05473-8   # FinnGen flagship, Nature 2023
+related_resources:
+  - gwas_catalog
+  - pan_ukbb
+  - biobank_japan
+notes: |
+  Genetic isolate (Finnish bottleneck) gives strong power for rare
+  loss-of-function variants. Especially valuable for drug-target validation
+  via human KO genetics. Phenotypes derived from ICD codes in Finnish
+  national health registries.
+last_verified: 2026-05-13
