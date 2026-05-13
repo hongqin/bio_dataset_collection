@@ -26,6 +26,11 @@ access_details: |
     - Harmonized 1kGP+HGDP release (4,094 genomes, 153M variants) via gnomAD:
       https://gnomad.broadinstitute.org/downloads#v3-hgdp-1kg
 size: 929 individuals from 54 worldwide populations; harmonized release 4,094 genomes when combined with 1kGP
+counts:
+  individuals: 929                # HGDP alone
+  populations: 54
+  individuals_harmonized: 4094    # 1kGP + HGDP combined release
+  variants_harmonized: 153000000
 last_updated: 2024
 citation:
   - https://doi.org/10.1126/science.aay5012     # HGDP high-coverage, Science 2020

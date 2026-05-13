@@ -41,6 +41,12 @@ size: |
   EpiRSV: ~250,000 sequences.
   EpiPox (mpox), EpiArbo (dengue, Zika, chikungunya, etc.): tens of thousands each.
   Submissions from labs in >200 countries/territories.
+counts:
+  sequences_sarscov2: 17000000
+  sequences_influenza: 7000000
+  sequences_rsv: 250000
+  sequences: 24250000              # approximate sum across all EpiX databases
+  countries: 200
 last_updated: 2026   # continuously updated
 citation:
   - https://doi.org/10.1002/gch2.1018       # GISAID Global Challenges 2017

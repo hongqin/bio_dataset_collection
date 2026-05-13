@@ -32,6 +32,9 @@ size: |
   ~400,000–450,000 adult interviews per year since 2011 (~10M+ cumulative
   since 1984). Covers all 50 US states, DC, and US territories. ~330 core
   + optional + state-added questions per cycle.
+counts:
+  interviews_per_year: 425000
+  interviews_cumulative: 10000000  # approximate, since 1984
 last_updated: 2024
 citation:
   - https://www.ncbi.nlm.nih.gov/books/NBK553031/   # StatPearls overview

@@ -39,6 +39,11 @@ size: |
   + ~1.5M+ nuclei from dorsolateral prefrontal cortex (DLPFC) across
   snRNA-seq and snATAC-seq. Quantitative neuropathology and MERFISH spatial
   transcriptomics in matched tissue sections.
+counts:
+  donors: 84
+  nuclei_mtg: 1400000
+  nuclei_dlpfc: 1500000
+  nuclei: 2900000
 last_updated: 2024
 citation:
   - https://doi.org/10.1038/s41593-024-01774-5   # SEA-AD Nat Neurosci 2024

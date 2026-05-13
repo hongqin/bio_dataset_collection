@@ -31,6 +31,17 @@ size: |
     EUR — ~420,000 ; CSA — ~9,000 ; AFR — ~6,600 ;
     EAS — ~2,700 ; MID — ~1,600 ; AMR — ~980.
   16,131 GWAS = 7,228 phenotypes × 6 continental ancestry groups (where N permits).
+counts:
+  individuals: 500000             # underlying UK Biobank cohort
+  individuals_eur: 420000
+  individuals_csa: 9000
+  individuals_afr: 6600
+  individuals_eas: 2700
+  individuals_mid: 1600
+  individuals_amr: 980
+  studies: 16131                  # GWAS run
+  phenotypes: 7228
+  ancestries: 6
 last_updated: 2024
 citation:
   - https://doi.org/10.1038/s41588-025-02335-7   # Nat Genet 2025

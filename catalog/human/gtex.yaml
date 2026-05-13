@@ -30,6 +30,10 @@ access_details: |
        dbGaP study phs000424 with DAC approval. NIH policy prevents release
        of raw sequence via the portal.
 size: ~17,000 RNA-seq samples from 54 tissues across ~1,000 donors (GTEx v8)
+counts:
+  donors: 948
+  samples: 17382                  # RNA-seq samples in v8
+  tissues: 54
 last_updated: 2020   # v8 stable release; v9 in progress
 citation:
   - https://doi.org/10.1126/science.aaz1776   # GTEx v8, Science 2020

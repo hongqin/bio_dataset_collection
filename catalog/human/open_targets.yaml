@@ -35,6 +35,10 @@ size: |
   evidence grid). Aggregates 20+ public evidence sources (GWAS Catalog,
   ClinVar, ChEMBL, IMPC mouse models, Reactome, etc.). Underlying GWAS
   cohorts integrated cover tens of millions of subjects across studies.
+counts:
+  targets: 63000
+  diseases: 28000
+  evidence_sources: 20
 last_updated: 2026   # quarterly releases
 citation:
   - https://doi.org/10.1093/nar/gkac1046   # NAR 2023

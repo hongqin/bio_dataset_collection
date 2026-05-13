@@ -32,6 +32,11 @@ size: |
   Cumulative GWAS sample sizes across deposited studies: tens of millions of
   individuals (with substantial sample overlap between studies of the same
   cohort, e.g., UK Biobank, FinnGen, BBJ).
+counts:
+  studies: 45000
+  traits: 5000
+  sumstats_files: 85000
+  associations: 700000
 last_updated: 2026
 citation:
   - https://doi.org/10.1093/nar/gkac1010   # NAR 2023

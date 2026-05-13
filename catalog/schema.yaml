@@ -75,6 +75,60 @@ fields:
     required: false
     type: string
     description: Scale of the resource (samples, cells, patients, terabytes).
+      Free-text — keep for human-readable summary.
+
+  counts:
+    required: false
+    type: map[string, int|float]
+    description: |
+      Structured numeric counts so future scripts can sort/filter resources
+      by scale. Use whichever keys apply; omit ones that don't.
+      Approximate values are fine — use round numbers when the source itself
+      is rounded (e.g., "~500,000" → 500000).
+
+      Recommended keys (use the most specific that applies):
+
+      Participants / subjects:
+        individuals               # total enrolled humans/animals
+        donors                    # tissue donors (atlases)
+        individuals_with_genotype # subset with array or WGS
+        individuals_with_wgs
+        individuals_with_wes
+
+      Biospecimens & molecular data:
+        samples                   # biological samples (may exceed individuals)
+        cells                     # single-cell or sc-nuclei counts
+        nuclei
+
+      Variants & sequences:
+        variants
+        snvs
+        indels
+        svs
+        sequences                 # for sequence repositories
+
+      Studies & traits:
+        studies                   # e.g., GWAS Catalog studies
+        traits
+        phenotypes
+        associations
+
+      Drug discovery & targets:
+        targets
+        diseases
+
+      Vital stats / surveillance:
+        deaths
+        births
+        interviews
+
+      Geography / network:
+        species
+        populations               # population groups (e.g., HGDP)
+        countries
+        institutions
+
+      Free-form keys allowed; prefer the recommended ones when applicable.
 
   last_updated:
     required: false

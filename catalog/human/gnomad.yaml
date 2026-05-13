@@ -30,6 +30,12 @@ access_details: |
   gnomAD; only aggregated summary stats. Underlying raw sequencing data for
   many contributing studies is on dbGaP/AnVIL (controlled access).
 size: v4.1 — 730,947 exomes + 76,215 genomes; 62.9M SNVs + 6.2M indels passing filters
+counts:
+  individuals_with_wes: 730947
+  individuals_with_wgs: 76215
+  individuals: 807162             # exomes + genomes
+  snvs: 62901592
+  indels: 6189261
 last_updated: 2024-04   # v4.1
 citation:
   - https://doi.org/10.1038/s41586-020-2308-7   # gnomAD flagship, Nature 2020

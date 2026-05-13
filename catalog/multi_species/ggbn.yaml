@@ -34,6 +34,10 @@ size: |
   Earth and tens of thousands of species (exact species count fluctuates
   daily as members add inventories). ~100 member institutions in 37
   countries.
+counts:
+  samples: 7100000
+  institutions: 100
+  countries: 37
 last_updated: 2026
 citation:
   - https://doi.org/10.1093/aob/mcw121      # GGBN botanical perspective, Ann Bot 2016

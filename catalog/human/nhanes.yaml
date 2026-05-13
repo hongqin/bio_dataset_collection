@@ -43,6 +43,10 @@ size: |
   DNA specimens from 5 cycles: NHANES III Phase II (1991–1994) and
   1999–2000, 2001–2002, 2007–2008, 2009–2010, 2011–2012 (~30,000–40,000
   participants with banked DNA).
+counts:
+  individuals_per_year: 5000
+  individuals_cumulative_continuous_1999_2018: 134310
+  individuals_with_dna: 35000     # approx, across 5 DNA-collecting cycles
 last_updated: 2024
 citation:
   - https://doi.org/10.1038/sdata.2016.96   # NHANES exposome/phenome, Sci Data 2016

@@ -43,6 +43,13 @@ size: |
     - PhycoCosm (algae): ~150+ algal genomes
   "Species" count is approximate because microbial taxa are often defined
   at the MAG/genome level rather than formal species.
+counts:
+  microbial_isolate_genomes: 100000
+  viral_genomes: 15000000          # IMG/VR — fragments included
+  fungal_genomes: 2500             # MycoCosm
+  plant_genomes: 300               # Phytozome
+  algal_genomes: 150               # PhycoCosm
+  species: 102950                  # approximate sum (microbes + fungi + plants + algae); viral genomes counted separately
 last_updated: 2026
 citation:
   - https://doi.org/10.1093/nar/gkt1069    # JGI Genome Portal NAR 2014

@@ -38,6 +38,10 @@ access_details: |
   All analysis happens inside the cloud Workbench; bulk download of
   individual-level data is not permitted.
 size: ~800,000 enrolled; ~245,000 WGS, ~315,000 genotyped (CDRv8, 2025)
+counts:
+  individuals: 800000             # enrolled
+  individuals_with_wgs: 245000
+  individuals_with_genotype: 315000
 last_updated: 2025   # CDRv8
 citation:
   - https://doi.org/10.1056/NEJMsr1809937       # NEJM 2019, program design

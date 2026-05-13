@@ -31,6 +31,11 @@ access_details: |
        NBDC Human Database (Japan) and the European Genome-Phenome Archive
        study JGAS000114. DAC review required.
 size: ~260,000 Japanese participants from 12 medical institutions; ~47 target diseases
+counts:
+  individuals: 260000
+  individuals_with_genotype: 260000
+  institutions: 12
+  target_diseases: 47
 last_updated: 2024
 citation:
   - https://doi.org/10.1016/j.je.2017.02.003   # BBJ profile, J Epidemiol 2017

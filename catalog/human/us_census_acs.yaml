@@ -32,6 +32,9 @@ access_details: |
   Data Centers (FSRDCs) with project review, typically used for linked
   administrative records (e.g., SSA, IRS, NCHS).
 size: ~330M US residents (Decennial); ~3.5M annual ACS housing units sampled
+counts:
+  individuals: 330000000           # US resident population (Decennial)
+  acs_housing_units_per_year: 3500000
 last_updated: 2026
 citation: []
 related_resources:

@@ -30,6 +30,11 @@ access_details: |
     - Survey data and aggregate genotype-phenotype tables released via
       project publications and dbVar/SRA for sequencing reads.
 size: ~46,000 dogs and ~14,000 cats enrolled (~60,000 animals total); ~2,000 dogs with low-pass WGS in the 2022 Science release (Karlsson et al. 2022)
+counts:
+  dogs: 46000
+  cats: 14000
+  individuals: 60000              # dogs + cats combined
+  dogs_with_wgs: 2000             # Karlsson et al. 2022 release
 last_updated: 2024
 citation:
   - https://doi.org/10.1126/science.abk0639   # Ancestry-inclusive dog genomics, Science 2022

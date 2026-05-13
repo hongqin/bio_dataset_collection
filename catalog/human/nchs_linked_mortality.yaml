@@ -34,6 +34,11 @@ size: |
     - NHANES 1999–2018: ~91,000 adult participants linked to NDI
     - NHANES III (1988–1994): ~21,000 adult participants linked to NDI
   Restricted-use files add child participants and full ICD-coded cause of death.
+counts:
+  nhis_adults_linked: 2400000
+  nhanes_adults_linked: 91000
+  nhanes3_adults_linked: 21000
+  individuals: 2512000             # sum of public-use LMF adults
 last_updated: 2024     # 2019 LMF release
 citation: []
 related_resources:

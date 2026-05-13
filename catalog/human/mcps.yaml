@@ -35,6 +35,11 @@ access_details: |
   Equity policy: data are released to researchers based in Mexico two years
   before worldwide release.
 size: ~150,000 adults recruited 1998–2004 (~100,000 women); ~141k exome-sequenced
+counts:
+  individuals: 150000
+  individuals_with_genotype: 140831
+  individuals_with_wes: 141046
+  individuals_with_wgs: 9950
 last_updated: 2023-10
 citation:
   - https://doi.org/10.1038/s41586-023-06595-3   # Nature 2023

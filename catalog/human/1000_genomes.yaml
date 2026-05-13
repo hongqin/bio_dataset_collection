@@ -28,6 +28,10 @@ access_details: |
   NYGC re-sequenced 3,202 samples (incl. 602 trios) to 30x coverage on
   GRCh38; CRAMs and joint-called VCFs are public.
 size: 3,202 samples (incl. 602 trios), 26 populations across 5 super-populations
+counts:
+  individuals: 3202
+  trios: 602
+  populations: 26                 # across 5 super-populations
 last_updated: 2023
 citation:
   - https://doi.org/10.1038/nature15393         # 1000G phase 3, Nature 2015
