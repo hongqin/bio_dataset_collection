@@ -1,0 +1,57 @@
+name: WormAtlas + WormWiring + OpenWorm Connectome Toolbox
+short_id: wormatlas
+url: https://www.wormatlas.org/
+provider: WormAtlas (Hall lab, Albert Einstein); WormWiring (Emmons lab); OpenWorm Foundation
+species:
+  - Caenorhabditis elegans
+taxonomy_ids:
+  - 6239
+research_themes:
+  - connectomics
+  - neuroscience
+  - model_organism
+  - developmental_biology
+  - cellular_anatomy
+data_modalities:
+  - serial_section_em            # White et al. 1986 EM micrographs + reannotations
+  - connectome_graphs            # chemical + electrical synapses, gap junctions
+  - neuron_lineage
+  - 3d_anatomy_reconstructions
+  - functional_connectomes       # Randi et al. 2023, etc.
+  - extrasynaptic_connectomes
+access_mode:
+  - public_open
+access_details: |
+  Open data, no registration.
+    - WormAtlas (anatomy, EM, lineage): https://www.wormatlas.org/
+    - WormWiring (connectome): https://wormwiring.org/
+    - OpenWorm Connectome Toolbox (structured datasets):
+      http://openworm.org/ConnectomeToolbox/
+    - Datasets distributed as CSV, JSON, GraphML, NeuroML.
+size: |
+  C. elegans is the only multicellular organism with a fully mapped
+  connectome (302 neurons + 95 muscle cells). Currently archived datasets
+  include:
+    - White et al. 1986 — original hermaphrodite connectome
+    - Cook et al. 2019 — hermaphrodite + male connectomes, reannotated
+    - Witvliet et al. 2021 — 8 developmental-stage connectomes
+    - Randi et al. 2023 — functional connectivity
+    - Various extrasynaptic + neuropeptide-receptor connectomes
+counts:
+  neurons: 302
+  muscle_cells: 95
+  connectomes_published: 8       # developmental time-course
+last_updated: 2024
+citation:
+  - https://doi.org/10.1098/rstb.1986.0056      # White et al. 1986
+  - https://doi.org/10.1038/s41586-019-1352-7   # Cook et al. 2019
+  - https://doi.org/10.1038/s41586-021-03778-8  # Witvliet et al. 2021
+related_resources:
+  - mgi
+notes: |
+  THE reference resource for invertebrate connectomics — long predates
+  modern connectome projects (FlyWire / MICrONS) and still the only
+  complete cell-by-cell wiring diagram of any animal. Pair with WormBase
+  (https://wormbase.org/) for gene-level data and OpenWorm's
+  simulation framework for in-silico modeling.
+last_verified: 2026-05-13

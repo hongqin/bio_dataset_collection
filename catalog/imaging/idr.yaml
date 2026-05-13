@@ -1,0 +1,47 @@
+name: Image Data Resource (IDR) — Cell-IDR + Tissue-IDR
+short_id: idr
+url: https://idr.openmicroscopy.org/
+provider: EMBL-EBI; Open Microscopy Environment (OME)
+species:
+  - multi-species
+research_themes:
+  - bioimaging
+  - light_microscopy
+  - cell_biology
+  - high_content_screening
+  - tissue_imaging
+data_modalities:
+  - light_microscopy            # fluorescence, brightfield, phase
+  - high_content_screens        # plate-based, RNAi / chemical
+  - 3d_volumes
+  - time_lapse
+  - segmentations
+  - annotations
+access_mode:
+  - public_open
+access_details: |
+  CC-BY on most studies. No registration.
+    - Portal: https://idr.openmicroscopy.org/
+    - OMERO server backend; Python/MATLAB clients via OMERO.
+    - REST + JSON API for browsing + bulk image access.
+    - EMBL-EBI Embassy science cloud hosting.
+  IDR is splitting into Cell-IDR (cellular imaging) and Tissue-IDR (tissue
+  imaging) to scale; data flows into [[bioimage_archive]] for long-term
+  preservation.
+size: |
+  ~100 curated reference studies, with hundreds of TB of imaging data;
+  hundreds of millions of individual image planes. Strong on high-content
+  RNAi / chemical screens and reference cell-line collections.
+counts:
+  studies: 100
+last_updated: 2026
+citation:
+  - https://doi.org/10.1038/nmeth.4326          # Williams et al., Nat Methods 2017
+related_resources:
+  - bioimage_archive
+  - allen_cell
+notes: |
+  Where BIA archives any submission, IDR provides VALUE-ADDED curation:
+  consistent metadata, normalized image planes, OMERO-backed reanalysis.
+  Best entry point for ML training on light microscopy.
+last_verified: 2026-05-13

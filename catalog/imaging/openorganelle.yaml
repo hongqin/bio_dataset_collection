@@ -1,0 +1,51 @@
+name: OpenOrganelle (Janelia COSEM)
+short_id: openorganelle
+url: https://openorganelle.janelia.org/
+provider: Janelia Research Campus (HHMI); COSEM team
+species:
+  - Homo sapiens               # HeLa, SUM159, iPS
+  - Mus musculus               # liver, spinal cord, kidney
+  - Saccharomyces cerevisiae   # yeast
+research_themes:
+  - cell_biology
+  - volume_em
+  - organelle_biology
+  - segmentation
+  - machine_learning_benchmarks
+data_modalities:
+  - fib_sem                    # focused ion beam scanning EM
+  - sbf_sem                    # serial block-face SEM
+  - organelle_segmentations    # up to 35 organelle classes
+  - precomputed_neuroglancer_volumes
+access_mode:
+  - public_open
+access_details: |
+  CC-BY 4.0; no registration.
+    - Portal + Neuroglancer viewer: https://openorganelle.janelia.org/
+    - Bulk download via S3: s3://janelia-cosem-datasets/
+    - AWS Open Data: https://registry.opendata.aws/janelia-cosem/
+    - GitHub for code + segmentation models:
+      https://github.com/janelia-cellmap/openorganelle
+size: |
+  ~30+ near-isotropic FIB-SEM volumes of whole cells (HeLa, SUM159-4,
+  hiPS, macrophages) and tissues (mouse spinal cord, liver, kidney).
+  Imaged at ~4 nm/voxel; volumes range from one cell (~50 GB) up to
+  millimeter-scale tissue blocks (TBs). Manual + ML segmentations for
+  up to 35 cellular organelle classes.
+counts:
+  datasets: 30
+  organelle_classes: 35
+  voxel_size_nm: 4
+last_updated: 2024
+citation:
+  - https://doi.org/10.1038/s41586-021-03977-3   # COSEM Nature 2021 — whole-cell organelle segmentation
+related_resources:
+  - bioimage_archive
+  - empiar
+  - cryoet_data_portal
+notes: |
+  The deepest publicly available volumetric EM of EUKARYOTIC CELLS (whole
+  cells, isotropic 4 nm) — distinct from the cryo-ET resources which are
+  ~10 nm and tissue-section thickness limited. Used heavily as a
+  segmentation-benchmark resource for cell biology.
+last_verified: 2026-05-13

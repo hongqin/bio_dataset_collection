@@ -1,0 +1,54 @@
+name: Allen Cell Imaging Collections (Allen Cell Explorer)
+short_id: allen_cell
+url: https://www.allencell.org/
+provider: Allen Institute for Cell Science
+species:
+  - Homo sapiens              # WTC-11 hiPS cell line
+taxonomy_ids:
+  - 9606
+research_themes:
+  - cell_biology
+  - 3d_imaging
+  - organelle_biology
+  - machine_learning_benchmarks
+  - stem_cells
+data_modalities:
+  - 3d_fluorescence_microscopy   # spinning-disk confocal
+  - cell_segmentations
+  - structure_segmentations
+  - ml_predictions               # label-free, structure prediction
+  - genome_edited_cell_lines
+access_mode:
+  - public_open
+access_details: |
+  Open data; CC-BY-NC variants on some derived products; check per-dataset
+  licensing.
+    - Portal: https://www.allencell.org/
+    - 3D Cell Viewer + Cell Feature Explorer (interactive):
+      https://cfe.allencell.org/
+    - Bulk download via Quilt + AWS S3:
+      https://registry.opendata.aws/allen-cell-imaging-collections/
+    - OME-TIFF format; 25 gene-edited cell lines (WTC-11 hiPS) with
+      mEGFP-tagged structures.
+size: |
+  Tens of thousands of live-cell 3D image volumes. 25 WTC-11 hiPS-derived
+  cell lines, each with a single mEGFP-tagged structure (mitochondria,
+  ER, golgi, actin, microtubules, lamin, nuclei, plasma membrane, etc.).
+  Each cell imaged with the tagged structure + DNA + cell membrane.
+counts:
+  cell_lines: 25
+  cells: 200000               # approximate cumulative across all lines
+last_updated: 2024
+citation:
+  - https://doi.org/10.1038/s41586-022-05563-7   # Integrated mitotic cell, Nature 2023
+related_resources:
+  - openorganelle
+  - idr
+  - bioimage_archive
+notes: |
+  Where OpenOrganelle covers volume EM at nanometer resolution, the
+  Allen Cell Collection covers fluorescent LIVE-cell 3D imaging at
+  micron resolution with a curated, isogenic gene-edited cell-line
+  panel — ideal for cell-state ML and label-free / structure-prediction
+  tasks.
+last_verified: 2026-05-13

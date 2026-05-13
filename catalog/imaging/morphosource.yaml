@@ -1,0 +1,47 @@
+name: MorphoSource
+short_id: morphosource
+url: https://www.morphosource.org/
+provider: Duke University Libraries; iDigBio; NSF-funded
+species:
+  - multi-species            # mainly vertebrates; some invertebrates and fossils
+research_themes:
+  - comparative_morphology
+  - paleontology
+  - vertebrate_anatomy
+  - museum_collections
+  - 3d_specimens
+data_modalities:
+  - microct                  # X-ray micro-computed tomography
+  - surface_meshes
+  - 3d_specimen_volumes
+  - 2d_imagery
+  - metadata                 # taxonomy, specimen catalog numbers
+access_mode:
+  - tiered
+  - registration_required    # free; needed for download
+  - public_open              # subset (~half) is CC-BY / CC0
+access_details: |
+  Free account required; access permission per-dataset (data authors set
+  Creative Commons restrictions).
+    - Portal: https://www.morphosource.org/
+    - SlicerMorph + MorphoSourceImport for programmatic retrieval of
+      open-access subsets.
+    - 2D viewer in-browser; downloads in TIFF stack, PLY, STL, etc.
+size: |
+  ~27,000 published 3D models of biological specimens (largely skeletal,
+  mostly vertebrates). Around 13,000 are open-access; the remainder
+  require data-author permission. Major collections include non-human
+  primate CT scans, mammals, birds, fish, fossil specimens.
+counts:
+  models: 27000
+  models_open_access: 13000
+last_updated: 2026
+citation:
+  - https://doi.org/10.1038/sdata.2016.1         # Non-human primate CT, Sci Data 2016
+related_resources:
+  - ggbn
+notes: |
+  Strongest public source for VERTEBRATE microCT (skeletal, soft tissue,
+  fossils). Plant and invertebrate coverage is sparse. The CC license
+  varies by data author — always check before re-use.
+last_verified: 2026-05-13

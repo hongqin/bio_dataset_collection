@@ -164,6 +164,21 @@ first, then tiered, then controlled.
 
 ---
 
+## Bioimaging & volumetric image archives
+
+| Resource | Data | Scale | File |
+|---|---|---|---|
+| [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/) | cross-modality umbrella (light + EM + MRI + microCT + more) | ~1,500 studies; 10s of PB | [`imaging/bioimage_archive.yaml`](imaging/bioimage_archive.yaml) |
+| [IDR (Cell-IDR + Tissue-IDR)](https://idr.openmicroscopy.org/) | curated light microscopy + high-content screens | ~100 reference studies; 100s TB | [`imaging/idr.yaml`](imaging/idr.yaml) |
+| [OpenOrganelle (Janelia COSEM)](https://openorganelle.janelia.org/) | FIB-SEM volumes of whole cells @ 4nm/voxel, 35 organelle classes | ~30 datasets | [`imaging/openorganelle.yaml`](imaging/openorganelle.yaml) |
+| [Allen Cell Imaging Collections](https://www.allencell.org/) | 3D live-cell fluorescence on 25 gene-edited WTC-11 hiPS lines | ~200k cell volumes | [`imaging/allen_cell.yaml`](imaging/allen_cell.yaml) |
+| [MorphoSource](https://www.morphosource.org/) | microCT specimens (largely vertebrate skeletal) | ~27,000 models (~13k open-access) | [`imaging/morphosource.yaml`](imaging/morphosource.yaml) |
+| [WormAtlas + WormWiring + OpenWorm](https://www.wormatlas.org/) | C. elegans connectomes, EM, anatomy, lineage | 302 neurons; 8+ published connectomes | [`imaging/wormatlas.yaml`](imaging/wormatlas.yaml) |
+
+> **Gap:** I did not find a consolidated public database for **plant microCT / volumetric imaging**. Most plant-root microCT data lives in per-paper supplementary materials (e.g., DIRT/3D for maize root crowns, synchrotron Arabidopsis root studies) rather than a single repository. The closest umbrella resources that DO accept plant imaging submissions are [BioImage Archive](https://www.ebi.ac.uk/bioimage-archive/) and (for community deposition) [Plant Image Analysis (plant-image-analysis.org)](https://www.plant-image-analysis.org/) — neither is a centralized microCT database.
+
+---
+
 ## AI / ML foundation models (single-cell)
 
 These are pre-trained model resources, not datasets — included because they

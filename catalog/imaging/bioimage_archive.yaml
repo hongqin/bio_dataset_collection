@@ -1,0 +1,48 @@
+name: BioImage Archive (BIA)
+short_id: bioimage_archive
+url: https://www.ebi.ac.uk/bioimage-archive/
+provider: EMBL-EBI
+species:
+  - multi-species
+research_themes:
+  - bioimaging
+  - microscopy
+  - cell_biology
+  - method_development
+data_modalities:
+  - light_microscopy
+  - super_resolution_microscopy
+  - volume_em                # FIB-SEM, SBF-SEM
+  - optical_projection_tomography
+  - mri
+  - ultrasound
+  - photoacoustic
+  - light_field
+  - brillouin_microscopy
+  - atomic_force_microscopy
+access_mode:
+  - public_open
+access_details: |
+  Open archive; CC0 or CC-BY licenses on submitted datasets.
+    - Portal: https://www.ebi.ac.uk/bioimage-archive/
+    - FTP, S3, and REST API access; bulk transfer via Globus / Aspera.
+    - Sister archives: EMPIAR (cryo-EM raw), IDR (curated added-value
+      light microscopy), Cell-IDR, Tissue-IDR.
+size: |
+  Thousands of bioimaging studies covering >10s of PB cumulative storage,
+  from sub-cellular molecules to whole organisms; growing rapidly as the
+  primary deposition target for biological imaging.
+counts:
+  studies: 1500              # approximate; growing rapidly
+last_updated: 2026
+citation:
+  - https://doi.org/10.1016/j.jmb.2022.167505    # BIA, JMB 2022
+related_resources:
+  - idr
+  - empiar
+  - openorganelle
+notes: |
+  The "GenBank for biological imaging" — multi-modal long-term archive.
+  Use BIA for primary deposition + retrieval; use [[idr]] for curated,
+  re-analysis-ready light-microscopy collections.
+last_verified: 2026-05-13
