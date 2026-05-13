@@ -1,0 +1,53 @@
+name: Human Cell Atlas (HCA)
+short_id: human_cell_atlas
+url: https://www.humancellatlas.org/
+provider: Human Cell Atlas Consortium; EMBL-EBI, Broad Institute, Wellcome Sanger Institute; funded in part by CZI
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - single_cell
+  - transcriptomics
+  - cell_atlas
+  - developmental_biology
+  - disease_atlas
+data_modalities:
+  - scrnaseq
+  - scatac_seq
+  - spatial_transcriptomics
+  - imaging
+  - cell_type_annotations
+access_mode:
+  - public_open
+access_details: |
+  Open data; the HCA Data Portal hosts standardized, harmonized projects
+  with consistent metadata, file formats (Matrix Service), and the
+  Adult Cell Atlas Project Browser.
+    - HCA Data Portal: https://data.humancellatlas.org/
+    - DCP CLI for bulk download.
+    - Many datasets dual-hosted on CZ CELLxGENE Discover, GEO, ArrayExpress,
+      and per-paper supplementary data.
+  Sensitive donor metadata may be redacted per HCA data-management plan.
+size: |
+  HCA's mission is to map ~37 trillion cells in the human body; the
+  portal currently hosts hundreds of contributing projects covering many
+  tens of millions of cells. Major tissue atlases include the Gut Cell
+  Atlas, Lung Cell Atlas, Heart Cell Atlas, Brain Cell Atlas, etc.
+counts:
+  cells: 50000000        # approximate — across portal-hosted projects
+  projects: 200          # approximate
+last_updated: 2026
+citation:
+  - https://doi.org/10.7554/eLife.27041     # HCA white paper, eLife 2017
+related_resources:
+  - cellxgene_census
+  - tabula_sapiens
+  - sea_ad
+notes: |
+  HCA is the umbrella INITIATIVE producing reference atlases. The data
+  itself is best discovered via the HCA Data Portal (harmonized) or
+  [[cellxgene_census]] (aggregated with cross-dataset query). Use
+  [[tabula_sapiens]] for the CZ-Biohub multi-organ reference, and
+  HCA for community organ-specific consortium atlases.
+last_verified: 2026-05-13

@@ -1,0 +1,58 @@
+name: CZ CELLxGENE Discover (incl. CELLxGENE Census)
+short_id: cellxgene_census
+url: https://cellxgene.cziscience.com/
+provider: Chan Zuckerberg Initiative; CZ Biohub Network
+species:
+  - Homo sapiens
+  - Mus musculus
+  - other vertebrates       # Census + Explorer occasionally include other species
+taxonomy_ids:
+  - 9606
+  - 10090
+research_themes:
+  - single_cell
+  - transcriptomics
+  - cell_atlas
+  - spatial_transcriptomics
+  - functional_genomics
+data_modalities:
+  - scrnaseq                # primary
+  - scatac_seq
+  - dna_methylation         # snmC-seq
+  - spatial_transcriptomics
+  - cell_type_annotations   # mapped to Cell Ontology
+access_mode:
+  - public_open
+access_details: |
+  Free, no registration.
+    - Web Explorer: https://cellxgene.cziscience.com/
+    - Census API (TileDB-SOMA backed) for Python/R bulk queries:
+      https://chanzuckerberg.github.io/cellxgene-census/
+    - AWS Open Data: https://registry.opendata.aws/czi-cellxgene-census/
+    - Standardized to a common metadata schema and Cell Ontology terms;
+      gene IDs normalized across releases.
+  CELLxGENE Discover = curated dataset browser; Census = aggregated
+  cross-dataset query layer.
+size: |
+  ~93,000,000 unique cells across community-contributed datasets.
+  Census release (~2024-07-01): ~44M primary human cells + ~16M mouse cells
+  in the canonical aggregated table.
+counts:
+  cells: 93000000
+  human_cells_census: 44000000
+  mouse_cells_census: 16000000
+last_updated: 2026
+citation:
+  - https://doi.org/10.1093/nar/gkae1142   # CELLxGENE NAR 2025
+related_resources:
+  - sea_ad
+  - tabula_sapiens
+  - tabula_muris
+  - human_cell_atlas
+notes: |
+  De-facto largest aggregated single-cell resource for human + mouse.
+  Use Census for cross-study queries ("expression of GENE in CELL TYPE
+  across studies"); use Discover/Explorer for paper-by-paper browsing.
+  Powers many downstream models — UCE, scGPT, scLDM, rBio — on the
+  Virtual Cells Platform (https://virtualcellmodels.cziscience.com/).
+last_verified: 2026-05-13

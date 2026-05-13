@@ -26,6 +26,9 @@ first, then tiered, then controlled.
 | [Open Targets Platform](https://platform.opentargets.org/) | 63k targets × 28k diseases (CC0) | drug discovery, variant-to-function | [`human/open_targets.yaml`](human/open_targets.yaml) |
 | [BioBank Japan PheWeb](https://pheweb.jp/) | hundreds of phenotype GWAS in Japanese ancestry | East Asian population genetics, cardiometabolic | [`human/biobank_japan.yaml`](human/biobank_japan.yaml) |
 | [SEA-AD](https://portal.brain-map.org/explore/seattle-alzheimers-disease) | ~84 donors, ~2.9M nuclei (snRNA + snATAC + MERFISH) | single-cell, Alzheimer's disease | [`human/sea_ad.yaml`](human/sea_ad.yaml) |
+| [CZ CELLxGENE Discover / Census](https://cellxgene.cziscience.com/) | ~93M cells aggregated; Census API for cross-dataset queries | single-cell aggregation | [`human/cellxgene_census.yaml`](human/cellxgene_census.yaml) |
+| [Tabula Sapiens](https://tabula-sapiens-portal.ds.czbiohub.org/) | 483k cells across 24 tissues / 14 donors (v2: ~1.1M) | reference cell atlas | [`human/tabula_sapiens.yaml`](human/tabula_sapiens.yaml) |
+| [Human Cell Atlas](https://www.humancellatlas.org/) | ~50M cells across 200+ harmonized projects | community cell atlases | [`human/human_cell_atlas.yaml`](human/human_cell_atlas.yaml) |
 
 ### Tiered (public summary + controlled individual-level)
 
@@ -55,6 +58,7 @@ first, then tiered, then controlled.
 | [MGI](https://www.informatics.jax.org/) | ~50k curated alleles, 1,500+ disease models, gene nomenclature | functional genomics, model organism | [`mouse/mgi.yaml`](mouse/mgi.yaml) |
 | [IMPC](https://www.mousephenotype.org/) | systematic KO phenotyping; 85M data points, 9,000+ genes phenotyped | knockout phenotyping, disease models | [`mouse/impc.yaml`](mouse/impc.yaml) |
 | [Mouse Phenome Database](https://phenome.jax.org/) | quantitative phenotypes across >6,000 strains (CC, DO, inbred) | quantitative genetics, GWAS, aging | [`mouse/mpd.yaml`](mouse/mpd.yaml) |
+| [Tabula Muris (Senis)](https://tabula-muris.ds.czbiohub.org/) | 100k cells, 20 tissues (Muris); 529k cells, 6 ages (Senis) | single-cell, aging, reference atlas | [`mouse/tabula_muris.yaml`](mouse/tabula_muris.yaml) |
 
 ---
 
@@ -167,6 +171,7 @@ first, then tiered, then controlled.
 | [DOE JGI](https://data.jgi.doe.gov/) | public, click-through data-use policy | microbial/fungal/plant genomics, metagenomics, bioenergy | [`multi_species/jgi.yaml`](multi_species/jgi.yaml) |
 | [GGBN + Smithsonian GGI](https://www.ggbn.org/) | metadata public; physical samples via MTA | biodiversity genomics, conservation, taxonomy | [`multi_species/ggbn.yaml`](multi_species/ggbn.yaml) |
 | [Animal QTLdb](https://www.animalgenome.org/cgi-bin/QTLdb/index) | public | livestock QTL across 7 species | [`multi_species/animal_qtldb.yaml`](multi_species/animal_qtldb.yaml) |
+| [Zebrahub](https://zebrahub.ds.czbiohub.org/) | public | zebrafish development scRNA-seq (~120k cells, 10 stages) | [`multi_species/zebrahub.yaml`](multi_species/zebrahub.yaml) |
 
 ---
 

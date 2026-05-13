@@ -1,0 +1,48 @@
+name: Tabula Sapiens
+short_id: tabula_sapiens
+url: https://tabula-sapiens-portal.ds.czbiohub.org/
+provider: CZ Biohub SF; Stanford School of Medicine
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - single_cell
+  - transcriptomics
+  - cell_atlas
+  - reference_atlas
+  - tissue_diversity
+data_modalities:
+  - scrnaseq             # 10x Genomics + Smart-seq2
+  - cell_type_annotations
+  - donor_metadata
+access_mode:
+  - public_open
+access_details: |
+  Open data; no registration.
+    - Portal: https://tabula-sapiens-portal.ds.czbiohub.org/
+    - h5ad downloads via figshare and CELLxGENE.
+    - Also surfaced on CZ CELLxGENE Discover for interactive exploration.
+size: |
+  ~483,000 single cells from 24 tissues and organs across 14 human donors,
+  spanning >400 annotated cell types. Some tissues paired with bulk RNA-seq.
+  Tabula Sapiens v2 (2024) ~1.1M cells, expanded donor count and tissues.
+counts:
+  cells: 483000
+  cells_v2: 1100000
+  tissues: 24
+  donors: 14
+  cell_types: 400
+last_updated: 2024     # v2 release
+citation:
+  - https://doi.org/10.1126/science.abl4896   # Science 2022
+related_resources:
+  - cellxgene_census
+  - human_cell_atlas
+  - sea_ad
+notes: |
+  Multi-organ, multi-donor scRNA-seq reference for healthy human tissue.
+  Pair with [[human_cell_atlas]] for broader community atlases and with
+  disease-specific atlases (SEA-AD for AD, others on CELLxGENE) for
+  comparisons.
+last_verified: 2026-05-13

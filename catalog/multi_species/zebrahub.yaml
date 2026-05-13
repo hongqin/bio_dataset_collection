@@ -1,0 +1,43 @@
+name: Zebrahub
+short_id: zebrahub
+url: https://zebrahub.ds.czbiohub.org/
+provider: CZ Biohub SF
+species:
+  - Danio rerio       # zebrafish
+taxonomy_ids:
+  - 7955
+research_themes:
+  - developmental_biology
+  - single_cell
+  - vertebrate_development
+  - cell_atlas
+  - time_series
+data_modalities:
+  - scrnaseq                # whole-embryo, per stage
+  - cell_lineage
+  - light_sheet_imaging     # paired imaging atlas
+  - cell_type_annotations
+access_mode:
+  - public_open
+access_details: |
+  Open data; no registration.
+    - Portal: https://zebrahub.ds.czbiohub.org/
+    - h5ad downloads + interactive cell-type browser.
+    - Light-sheet imaging data complement the transcriptomic atlas.
+size: |
+  First release: ~120,000 single cells across 10 developmental stages of
+  the zebrafish embryo, profiled at single-embryo resolution.
+counts:
+  cells: 120000
+  developmental_stages: 10
+last_updated: 2023
+citation: []
+related_resources:
+  - cellxgene_census
+  - tabula_sapiens
+notes: |
+  Single-embryo-resolution scRNA-seq across early-to-mid zebrafish
+  development, enabling lineage tracing without bulk pooling. Especially
+  useful for cell-fate decisions and signaling-pathway dynamics in a
+  tractable vertebrate model.
+last_verified: 2026-05-13

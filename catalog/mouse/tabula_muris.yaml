@@ -1,0 +1,49 @@
+name: Tabula Muris (Senis)
+short_id: tabula_muris
+url: https://tabula-muris.ds.czbiohub.org/
+provider: CZ Biohub SF; Stanford School of Medicine
+species:
+  - Mus musculus
+taxonomy_ids:
+  - 10090
+research_themes:
+  - single_cell
+  - transcriptomics
+  - aging
+  - cell_atlas
+  - reference_atlas
+data_modalities:
+  - scrnaseq             # 10x Genomics + Smart-seq2
+  - cell_type_annotations
+  - age_stratified_samples
+access_mode:
+  - public_open
+access_details: |
+  Open data; no registration.
+    - Tabula Muris portal: https://tabula-muris.ds.czbiohub.org/
+    - Tabula Muris Senis (aging) portal: https://tabula-muris-senis.ds.czbiohub.org/
+    - h5ad downloads via figshare; also on CZ CELLxGENE Discover.
+size: |
+  Tabula Muris: ~100,000 cells from 20 organs/tissues of young adult mice
+  (~3 months).
+  Tabula Muris Senis: extended atlas — ~529,000 cells from 23 tissues
+  across multiple ages (1, 3, 18, 21, 24, 30 months) for aging research.
+counts:
+  cells: 100000
+  cells_senis: 529000
+  tissues: 23
+  age_groups_senis: 6
+last_updated: 2020     # Senis publication
+citation:
+  - https://doi.org/10.1038/s41586-018-0590-4   # Tabula Muris, Nature 2018
+  - https://doi.org/10.1038/s41586-020-2496-1   # Tabula Muris Senis, Nature 2020
+related_resources:
+  - tabula_sapiens
+  - cellxgene_census
+  - mgi
+notes: |
+  Multi-organ scRNA-seq reference for mouse; the Senis (aging) extension
+  is uniquely valuable for geroscience — directly aligns with [[mpd]] /
+  [[impc]] for aging-related quantitative phenotypes. Mouse counterpart
+  to [[tabula_sapiens]].
+last_verified: 2026-05-13
