@@ -31,7 +31,10 @@ access_details: |
   Death, Compressed Mortality (1968–2016), Natality, Cancer Incidence (USCS),
   Provisional Mortality (Vital Statistics Rapid Release), STD surveillance,
   TB, Measles, AIDS Public Information Dataset, AQS, NORS.
-size: All US deaths since 1968; tens of millions of records
+size: |
+  Death records: ~150M+ US deaths from 1968 onward (Compressed Mortality 1968–2016
+  and Underlying/Multiple Cause of Death 1999–present). Natality: ~3.6M births
+  per year for years 1995+. Cancer incidence (USCS): ~1.7M new cases per year.
 last_updated: 2026     # provisional updated weekly
 citation: []
 related_resources:

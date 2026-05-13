@@ -28,7 +28,12 @@ access_details: |
       across 37 countries).
     - Sequence data generated from these samples typically lives in
       GenBank/SRA/ENA under standard INSDC terms.
-size: 3M+ samples across nearly half of all biological families (2021+)
+size: |
+  ~7,100,000 samples (GGBN portal counter, 2024+), up from ~3M in 2021 and
+  ~78,000 in 2015. Spans nearly half of all named biological families on
+  Earth and tens of thousands of species (exact species count fluctuates
+  daily as members add inventories). ~100 member institutions in 37
+  countries.
 last_updated: 2026
 citation:
   - https://doi.org/10.1093/aob/mcw121      # GGBN botanical perspective, Ann Bot 2016

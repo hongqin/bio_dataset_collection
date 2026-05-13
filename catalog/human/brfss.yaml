@@ -28,7 +28,10 @@ access_details: |
       https://www.cdc.gov/brfss/brfssprevalence/index.html
     - SMART (Selected Metropolitan/Micropolitan Area Risk Trends) for
       sub-state estimates.
-size: >400,000 adult interviews per year; largest continuous health survey worldwide
+size: |
+  ~400,000–450,000 adult interviews per year since 2011 (~10M+ cumulative
+  since 1984). Covers all 50 US states, DC, and US territories. ~330 core
+  + optional + state-added questions per cycle.
 last_updated: 2024
 citation:
   - https://www.ncbi.nlm.nih.gov/books/NBK553031/   # StatPearls overview

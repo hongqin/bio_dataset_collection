@@ -35,7 +35,14 @@ access_details: |
        Center (RDC); fees apply for new genotyping; some anonymized genetic
        datasets are released under DUA without RDC access.
        Contact: NHANESGenetics@CDC.gov, RDCA@cdc.gov
-size: ~5,000 participants/year since 1999; DNA from 5 cycles between 1991 and 2012
+size: |
+  Continuous NHANES (1999–): ~5,000 participants per year released in
+  2-year cycles; ~134,310 participants cumulative through 2018, ~160k+
+  through 2024. Earlier programs: NHANES I (~24,000), II (~20,000),
+  III (~34,000), Hispanic HANES (~16,000).
+  DNA specimens from 5 cycles: NHANES III Phase II (1991–1994) and
+  1999–2000, 2001–2002, 2007–2008, 2009–2010, 2011–2012 (~30,000–40,000
+  participants with banked DNA).
 last_updated: 2024
 citation:
   - https://doi.org/10.1038/sdata.2016.96   # NHANES exposome/phenome, Sci Data 2016

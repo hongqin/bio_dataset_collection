@@ -25,7 +25,13 @@ access_details: |
     - Full summary statistics (where deposited) on FTP, with dedicated API:
       https://www.ebi.ac.uk/gwas/summary-statistics/api
   Trait curation uses the Experimental Factor Ontology (EFO) for harmonization.
-size: >45,000 published GWAS, >5,000 traits, >85,000 full summary-statistics files (2024+)
+size: |
+  >45,000 published GWAS curated; >5,000 traits (mapped to EFO);
+  >85,000 full summary-statistics files deposited; ~700,000+ unique
+  variant–trait associations at genome-wide significance.
+  Cumulative GWAS sample sizes across deposited studies: tens of millions of
+  individuals (with substantial sample overlap between studies of the same
+  cohort, e.g., UK Biobank, FinnGen, BBJ).
 last_updated: 2026
 citation:
   - https://doi.org/10.1093/nar/gkac1010   # NAR 2023

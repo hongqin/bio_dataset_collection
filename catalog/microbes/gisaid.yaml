@@ -35,7 +35,12 @@ access_details: |
   Use restrictions: data may not be re-shared outside GISAID, and analyses
   using GISAID data should acknowledge originating and submitting labs.
   These terms have been criticized for restricting open re-use.
-size: >17M SARS-CoV-2 sequences and millions of influenza sequences (2025)
+size: |
+  EpiCoV (SARS-CoV-2): >17,000,000 genome sequences (2025+).
+  EpiFlu (influenza A/B): >7,000,000 sequences.
+  EpiRSV: ~250,000 sequences.
+  EpiPox (mpox), EpiArbo (dengue, Zika, chikungunya, etc.): tens of thousands each.
+  Submissions from labs in >200 countries/territories.
 last_updated: 2026   # continuously updated
 citation:
   - https://doi.org/10.1002/gch2.1018       # GISAID Global Challenges 2017

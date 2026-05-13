@@ -33,7 +33,12 @@ access_details: |
   Note: SEA-AD focuses on cellular/molecular phenotypes — not GWAS
   genotypes — but is paired with donor metadata (Braak stage, CERAD score,
   ApoE genotype, age, sex).
-size: ~80 donors across the AD continuum (control → severe), MTG and DLPFC
+size: |
+  ~84 donors spanning the AD continuum (cognitively normal → severe).
+  Single-nucleus profiling: ~1.4M+ nuclei from middle temporal gyrus (MTG)
+  + ~1.5M+ nuclei from dorsolateral prefrontal cortex (DLPFC) across
+  snRNA-seq and snATAC-seq. Quantitative neuropathology and MERFISH spatial
+  transcriptomics in matched tissue sections.
 last_updated: 2024
 citation:
   - https://doi.org/10.1038/s41593-024-01774-5   # SEA-AD Nat Neurosci 2024

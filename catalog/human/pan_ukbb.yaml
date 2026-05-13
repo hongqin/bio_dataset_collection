@@ -25,7 +25,12 @@ access_details: |
     - Sample metadata via UKB showcase return 2442.
   Individual-level UK Biobank data remains controlled-access via UKB
   application (separate process).
-size: 16,131 GWAS across 7,228 phenotypes × 6 continental ancestry groups
+size: |
+  ~500,000 UK Biobank participants total (the underlying cohort).
+  Per-ancestry analysis Ns (approximate, from Pan-UKBB):
+    EUR — ~420,000 ; CSA — ~9,000 ; AFR — ~6,600 ;
+    EAS — ~2,700 ; MID — ~1,600 ; AMR — ~980.
+  16,131 GWAS = 7,228 phenotypes × 6 continental ancestry groups (where N permits).
 last_updated: 2024
 citation:
   - https://doi.org/10.1038/s41588-025-02335-7   # Nat Genet 2025

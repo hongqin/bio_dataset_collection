@@ -28,7 +28,12 @@ access_details: |
     2. RESTRICTED-USE LMF — adults + children, full mortality detail, exact
        dates, fine ICD codes. Access only through the NCHS Research Data
        Center (RDC) with project review (~4–6 weeks).
-size: Linkage covers tens of millions of survey records to National Death Index
+size: |
+  Public-use LMF coverage:
+    - NHIS 1986–2018: ~2.4M adult participants linked to NDI
+    - NHANES 1999–2018: ~91,000 adult participants linked to NDI
+    - NHANES III (1988–1994): ~21,000 adult participants linked to NDI
+  Restricted-use files add child participants and full ICD-coded cause of death.
 last_updated: 2024     # 2019 LMF release
 citation: []
 related_resources:

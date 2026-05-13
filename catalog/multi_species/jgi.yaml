@@ -32,7 +32,17 @@ access_details: |
   Historical "use-restricted" pre-publication policy is being retired —
   JGI no longer produces use-restricted data in new projects; remaining
   restrictions expire at publication or set date.
-size: 100k+ genomes/assemblies/metagenomes across microbes, fungi, plants
+size: |
+  Approximate scope across JGI portals (2024+):
+    - IMG/M microbial: ~100,000+ isolate bacterial/archaeal genomes
+    - IMG/VR viral: >15,000,000 viral genomes and fragments (largest open
+      uncultivated virus collection)
+    - IMG/M metagenomes: tens of thousands of metagenome assemblies
+    - MycoCosm (fungi): ~2,500+ fungal genomes (Dikarya broad coverage)
+    - Phytozome (plants): ~300+ plant + algal reference genomes
+    - PhycoCosm (algae): ~150+ algal genomes
+  "Species" count is approximate because microbial taxa are often defined
+  at the MAG/genome level rather than formal species.
 last_updated: 2026
 citation:
   - https://doi.org/10.1093/nar/gkt1069    # JGI Genome Portal NAR 2014

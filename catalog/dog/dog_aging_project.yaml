@@ -36,7 +36,7 @@ access_details: |
        owner-linked fields) require an additional approval step.
   No human-subjects IRB needed (canine subjects); institutional sign-off on
   the DUA is typical. Curated data are de-identified and released annually.
-size: Tens of thousands of companion dogs enrolled; Precision cohort ~1,000 dogs with deep multi-omics
+size: ~50,000 dogs enrolled overall (47,444 with completed surveys 2020–2023); Precision cohort ~1,000 dogs with deep multi-omics; TRIAD rapamycin sub-trial target N = 580 (~180 enrolled as of late 2024)
 last_updated: 2025
 citation:
   - https://doi.org/10.1038/s41586-021-04282-9   # Nature 2022 — open science study

@@ -30,7 +30,11 @@ access_details: |
     - AWS Open Data mirror: https://registry.opendata.aws/opentargets/
   Open Targets Genetics has been merged into the unified Open Targets
   Platform API; legacy Genetics endpoints redirect.
-size: ~63k targets × ~28k diseases; aggregates 20+ public evidence sources
+size: |
+  ~63,000 target genes/proteins × ~28,000 diseases/phenotypes (target–disease
+  evidence grid). Aggregates 20+ public evidence sources (GWAS Catalog,
+  ClinVar, ChEMBL, IMPC mouse models, Reactome, etc.). Underlying GWAS
+  cohorts integrated cover tens of millions of subjects across studies.
 last_updated: 2026   # quarterly releases
 citation:
   - https://doi.org/10.1093/nar/gkac1046   # NAR 2023
