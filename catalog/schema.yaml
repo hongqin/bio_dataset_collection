@@ -1,0 +1,102 @@
+# Catalog entry schema for bio_dataset_collection
+# Every file under catalog/<species>/*.yaml SHOULD validate against this schema.
+# Fields marked required: true must be present; others are optional but encouraged.
+
+schema_version: 1
+
+fields:
+  name:
+    required: true
+    type: string
+    description: Canonical name of the dataset or database.
+
+  short_id:
+    required: true
+    type: string
+    description: Stable kebab-case identifier (matches filename without .yaml).
+
+  url:
+    required: true
+    type: string
+    description: Primary access / landing page URL.
+
+  provider:
+    required: true
+    type: string
+    description: Hosting institution, consortium, or company.
+
+  species:
+    required: true
+    type: list[string]
+    description: Organism(s) covered. Use scientific names where practical
+      (e.g., "Homo sapiens", "Canis lupus familiaris", "multi-species").
+
+  taxonomy_ids:
+    required: false
+    type: list[int]
+    description: NCBI taxonomy IDs for the species above.
+
+  research_themes:
+    required: true
+    type: list[string]
+    description: Topics from the controlled list in README.md (genomics,
+      transcriptomics, epigenomics, cancer_genomics, clinical_ehr,
+      microbiome, imaging, drug_discovery, phenotype_ontology, geroscience, etc.).
+
+  data_modalities:
+    required: true
+    type: list[string]
+    description: Data types present (wgs, wes, genotyping, bulk_rnaseq,
+      scrnaseq, atac_seq, chip_seq, methylation, proteomics, metabolomics,
+      microbiome_16s, microbiome_shotgun, imaging_histology, imaging_radiology,
+      ehr, survey, wearable, biobank_tissue, etc.).
+
+  access_mode:
+    required: true
+    type: list[string]
+    description: One or more of the controlled values below.
+    allowed_values:
+      - public_open                   # free download, no registration
+      - registration_required         # free account, no review
+      - usage_agreement               # click-through or signed DUA
+      - controlled_access_dac         # DAC application required
+      - irb_required                  # local IRB approval needed
+      - institutional_membership      # paid / member-only
+      - embargoed                     # public after stated date
+      - tiered                        # multiple tiers (see access_details)
+
+  access_details:
+    required: false
+    type: string
+    description: Free-text expansion of access_mode — where to apply, what
+      restrictions apply, whether data leaves the platform, etc.
+
+  size:
+    required: false
+    type: string
+    description: Scale of the resource (samples, cells, patients, terabytes).
+
+  last_updated:
+    required: false
+    type: string
+    description: Most recent release/update date (YYYY-MM-DD or YYYY-MM).
+
+  citation:
+    required: false
+    type: list[string]
+    description: DOIs or primary publications.
+
+  related_resources:
+    required: false
+    type: list[string]
+    description: short_ids of related entries in this catalog.
+
+  notes:
+    required: false
+    type: string
+    description: Caveats, license terms, embargo periods, equity policies.
+
+  last_verified:
+    required: false
+    type: string
+    description: Date the agent last verified the URL and access mode (YYYY-MM-DD).

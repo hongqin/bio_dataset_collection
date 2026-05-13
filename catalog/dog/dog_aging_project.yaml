@@ -1,0 +1,52 @@
+name: Dog Aging Project
+short_id: dog_aging_project
+url: https://dogagingproject.org/data-access
+provider: University of Washington & Texas A&M (NIA-funded); data hosted on Terra at the Broad Institute
+species:
+  - Canis lupus familiaris
+taxonomy_ids:
+  - 9615
+research_themes:
+  - geroscience
+  - genomics
+  - clinical_ehr
+  - microbiome
+  - environmental_exposure
+  - phenotype_ontology
+data_modalities:
+  - wgs                # low-pass WGS / genotyping by sequencing (Foundation cohort)
+  - bulk_rnaseq        # Precision cohort
+  - metabolomics       # Precision cohort
+  - microbiome_shotgun # Precision cohort (gut microbiome)
+  - ehr                # veterinary electronic medical records
+  - survey             # Health and Life Experience Survey (HLES)
+  - wearable           # accelerometer activity data
+  - biobank_tissue     # DAP Biobank specimens
+access_mode:
+  - tiered
+  - usage_agreement
+access_details: |
+  Two tracks:
+    1. Curated open-access data — researchers (academic, nonprofit,
+       government, educators, journalists, members of the public) apply at
+       https://dogagingproject.org/data-access, sign an individual Data Use
+       Agreement, and download via the DAP data repository on Terra at the
+       Broad Institute (https://data.dogagingproject.org/).
+    2. Restricted variables (e.g., precise geolocation, identifiable
+       owner-linked fields) require an additional approval step.
+  No human-subjects IRB needed (canine subjects); institutional sign-off on
+  the DUA is typical. Curated data are de-identified and released annually.
+size: Tens of thousands of companion dogs enrolled; Precision cohort ~1,000 dogs with deep multi-omics
+last_updated: 2025
+citation:
+  - https://doi.org/10.1038/s41586-021-04282-9   # Nature 2022 — open science study
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC12397037/   # Precision cohort design
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC9716607/    # DAP Biobank
+related_resources: []
+notes: |
+  Open-data, community-science longitudinal study of canine aging as a
+  translational model for human geroscience. Includes the TRIAD sub-trial
+  of rapamycin in companion dogs. Foundation cohort provides cheek-swab
+  DNA for genotyping by sequencing; Precision cohort adds longitudinal
+  multi-omics. Data distributed via Terra cloud platform.
+last_verified: 2026-05-13

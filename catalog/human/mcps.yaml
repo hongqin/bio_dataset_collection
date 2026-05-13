@@ -1,0 +1,49 @@
+name: Mexico City Prospective Study
+short_id: mcps
+url: https://mcps-epcm.org/study.html
+provider: UNAM (Universidad Nacional Autónoma de México) and University of Oxford CTSU
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - genomics
+  - population_genetics
+  - clinical_ehr
+  - cardiometabolic_disease
+  - mortality
+data_modalities:
+  - wgs              # ~9,950 participants
+  - wes              # ~141,046 participants
+  - genotyping       # ~140,831 participants
+  - survey           # baseline + 10k resurvey questionnaires
+  - ehr              # linked cause-specific mortality
+access_mode:
+  - tiered
+  - public_open               # variant browser only
+  - usage_agreement
+  - controlled_access_dac
+access_details: |
+  Three tiers:
+    1. Public — RGC-MCPS variant browser (allele frequencies, annotations)
+       at https://rgc-mcps.regeneron.com — open, no registration.
+    2. Aggregate / baseline survey + mortality — released to bona-fide
+       academic researchers under a Data Use Agreement.
+    3. Individual-level genetic + phenotype data — controlled access via
+       application to the MCPS access committee. Approved researchers analyze
+       the data on a DNAnexus/AWS platform; raw data do not leave the platform.
+  Equity policy: data are released to researchers based in Mexico two years
+  before worldwide release.
+size: ~150,000 adults recruited 1998–2004 (~100,000 women); ~141k exome-sequenced
+last_updated: 2023-10
+citation:
+  - https://doi.org/10.1038/s41586-023-06595-3   # Nature 2023
+  - https://doi.org/10.1093/ije/dyl009           # Cohort profile, IJE 2006
+related_resources: []
+notes: |
+  Largest blood-based prospective cohort of a Latin-American population.
+  Participants recruited from Coyoacán and Iztapalapa districts of Mexico City.
+  Admixed ancestry (Indigenous Mexican + European), strong rare-variant
+  discovery power. Useful for type 2 diabetes, obesity, kidney/cardiovascular
+  disease, and ancestry-aware GWAS.
+last_verified: 2026-05-13
