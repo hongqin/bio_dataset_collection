@@ -1,0 +1,54 @@
+name: Universal Cell Embeddings (UCE)
+short_id: uce
+url: https://virtualcellmodels.cziscience.com/model/uce
+provider: Stanford SNAP Group (Leskovec lab) and Quake Lab (CZ Biohub SF); hosted on CZ Virtual Cells Platform
+species:
+  - Homo sapiens
+  - Mus musculus
+  - Danio rerio
+  - Microcebus murinus     # mouse lemur
+  - Macaca fascicularis    # crab-eating macaque
+  - Macaca mulatta         # rhesus macaque
+  - Xenopus tropicalis     # tropical clawed frog
+  - Sus scrofa             # pig
+research_themes:
+  - single_cell
+  - foundation_model
+  - cross_species_biology
+  - representation_learning
+  - zero_shot_learning
+data_modalities:
+  - pretrained_model_weights
+  - cell_embeddings
+  - cross_species_alignment
+access_mode:
+  - public_open
+access_details: |
+  Open-source code (MIT) and pretrained checkpoints.
+    - Virtual Cells Platform: https://virtualcellmodels.cziscience.com/model/uce
+    - GitHub: https://github.com/snap-stanford/UCE
+    - Pretrained checkpoints (4-layer and 33-layer): linked from repo +
+      Hugging Face (e.g., minwoosun/uce-100m).
+  Uses ESM2 protein-sequence embeddings as gene tokens, enabling
+  zero-shot inference on previously unseen species.
+size: |
+  Pretrained on ~36,000,000 single cells from 8 species and dozens of
+  tissues (majority of human + mouse data from CZ CELLxGENE).
+  Two main checkpoints: 4-layer (smaller, faster) and 33-layer (largest,
+  ~100M+ parameters).
+counts:
+  training_cells: 36000000
+  species: 8
+last_updated: 2023-11
+citation:
+  - https://doi.org/10.1101/2023.11.28.568918    # bioRxiv 2023 (UCE preprint)
+related_resources:
+  - cellxgene_census
+  - scgpt
+  - transcriptformer
+  - alphafold_db
+notes: |
+  Distinguishing feature: zero-shot embeddings for species absent from
+  training (because gene tokens use ESM2 protein embeddings). Best for
+  cross-species cell-type analogy and reference mapping.
+last_verified: 2026-05-13

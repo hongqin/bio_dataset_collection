@@ -1,0 +1,54 @@
+name: Geneformer
+short_id: geneformer
+url: https://huggingface.co/ctheodoris/Geneformer
+provider: Theodoris Lab (Broad Institute of MIT and Harvard); also surfaced on CZ Virtual Cells Platform
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - single_cell
+  - foundation_model
+  - transcriptomics
+  - network_biology
+  - drug_target_discovery
+data_modalities:
+  - pretrained_model_weights
+  - cell_embeddings
+  - gene_embeddings
+  - in_silico_perturbation_predictions
+access_mode:
+  - public_open
+access_details: |
+  Open-source on Hugging Face under Apache 2.0; academic and commercial use.
+    - Hugging Face: https://huggingface.co/ctheodoris/Geneformer
+    - Training corpus (Genecorpus-30M) also released:
+      https://huggingface.co/datasets/ctheodoris/Genecorpus-30M
+    - Mirrored on CZ Virtual Cells Platform:
+      https://virtualcellmodels.cziscience.com/model/geneformer
+    - NVIDIA BioNeMo provides optimized inference / training:
+      https://docs.nvidia.com/bionemo-framework/latest/models/geneformer/
+size: |
+  Geneformer V1 (2021): ~30M human cells (Genecorpus-30M).
+  Geneformer V2 (2024): ~104M human non-cancer single cells.
+  V2 has variants at several parameter scales for resource-efficient
+  inference (per scaling/quantization paper, Nat Comput Sci 2026).
+counts:
+  training_cells_v1: 30000000
+  training_cells_v2: 104000000
+last_updated: 2024
+citation:
+  - https://doi.org/10.1038/s41586-023-06139-9    # Geneformer, Nature 2023
+  - https://doi.org/10.1038/s41596-026-01364-8    # Discovery protocol, Nat Protoc
+related_resources:
+  - cellxgene_census
+  - scgpt
+  - uce
+notes: |
+  Human-only encoder model emphasizing in-silico perturbation for drug-
+  target discovery. Notable real-world validation: discovered a novel
+  transcription factor in cardiomyocytes that was experimentally
+  confirmed (Nature 2023). The Apache 2.0 license makes Geneformer
+  the most commercially permissive of the major single-cell foundation
+  models.
+last_verified: 2026-05-13

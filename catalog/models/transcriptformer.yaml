@@ -1,0 +1,52 @@
+name: TranscriptFormer
+short_id: transcriptformer
+url: https://virtualcellmodels.cziscience.com/model/transcriptformer
+provider: CZ Initiative AI team
+species:
+  - multi-species         # 12 species spanning 1.5B years of evolution
+research_themes:
+  - single_cell
+  - foundation_model
+  - cross_species_biology
+  - generative_modeling
+  - evolutionary_biology
+data_modalities:
+  - pretrained_model_weights
+  - generative_cell_simulations
+  - cell_embeddings
+access_mode:
+  - public_open
+access_details: |
+  Open weights and code.
+    - Virtual Cells Platform: https://virtualcellmodels.cziscience.com/model/transcriptformer
+    - GitHub: https://github.com/czi-ai/transcriptformer
+    - Pretrained checkpoints for both TF-Metazoa and TF-Exemplar variants.
+size: |
+  Two main variants:
+    - TF-Metazoa: 112M cells across 12 species — human, mouse, rabbit,
+      chicken, African clawed frog, zebrafish, sea urchin, C. elegans,
+      fruit fly, freshwater sponge, yeast, malaria parasite.
+    - TF-Exemplar: 110M cells from 5 species (human, mouse, zebrafish,
+      fruit fly, C. elegans).
+  Human (57M) + mouse (27M) data drawn primarily from CZ CELLxGENE
+  Census; 67M healthy + 17M diseased cells across 123 disease contexts.
+counts:
+  training_cells_metazoa: 112000000
+  training_cells_exemplar: 110000000
+  species_metazoa: 12
+  species_exemplar: 5
+  diseases: 123
+last_updated: 2025
+citation:
+  - https://doi.org/10.1126/science.aec8514     # Science 2025
+related_resources:
+  - cellxgene_census
+  - uce
+  - scgpt
+notes: |
+  CZI's flagship cross-species cell-biology foundation model — the
+  broadest evolutionary span of any single-cell foundation model to
+  date. Generative; supports cross-species cell-type alignment, virtual
+  perturbation, and disease-state inference. Designed to complement
+  [[uce]] (also cross-species but encoder-only).
+last_verified: 2026-05-13

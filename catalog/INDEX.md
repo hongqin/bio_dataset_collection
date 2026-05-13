@@ -164,6 +164,21 @@ first, then tiered, then controlled.
 
 ---
 
+## AI / ML foundation models (single-cell)
+
+These are pre-trained model resources, not datasets — included because they
+are part of the same data ecosystem (trained on CELLxGENE) and surfaced on
+the CZ Virtual Cells Platform.
+
+| Model | Training scale | License | File |
+|---|---|---|---|
+| [scGPT](https://virtualcellmodels.cziscience.com/model/scgpt) | ~33M cells (human + mouse) | CC-BY-NC-ND on checkpoints, MIT code | [`models/scgpt.yaml`](models/scgpt.yaml) |
+| [UCE — Universal Cell Embeddings](https://virtualcellmodels.cziscience.com/model/uce) | ~36M cells across 8 species; zero-shot cross-species | MIT | [`models/uce.yaml`](models/uce.yaml) |
+| [TranscriptFormer](https://virtualcellmodels.cziscience.com/model/transcriptformer) | 112M cells × 12 species spanning 1.5B years of evolution | open weights | [`models/transcriptformer.yaml`](models/transcriptformer.yaml) |
+| [Geneformer](https://huggingface.co/ctheodoris/Geneformer) | 30M (V1) → 104M (V2) human non-cancer cells | Apache 2.0 (most permissive) | [`models/geneformer.yaml`](models/geneformer.yaml) |
+
+---
+
 ## Multi-species / comparative
 
 | Resource | Access | Themes | File |

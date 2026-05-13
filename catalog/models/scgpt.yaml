@@ -1,0 +1,47 @@
+name: scGPT
+short_id: scgpt
+url: https://virtualcellmodels.cziscience.com/model/scgpt
+provider: Bo Wang Lab (Vector Institute / University of Toronto); hosted on CZ Virtual Cells Platform
+species:
+  - Homo sapiens
+  - Mus musculus
+research_themes:
+  - single_cell
+  - foundation_model
+  - transcriptomics
+  - representation_learning
+data_modalities:
+  - pretrained_model_weights
+  - cell_embeddings
+  - gene_embeddings
+  - generative_predictions    # perturbation, imputation
+access_mode:
+  - public_open
+access_details: |
+  CC-BY-NC-ND on the published model (non-commercial); code under MIT.
+    - Virtual Cells Platform: https://virtualcellmodels.cziscience.com/model/scgpt
+    - GitHub (code, training scripts, fine-tuning notebooks):
+      https://github.com/bowang-lab/scGPT
+    - Pretrained checkpoints on Google Drive (linked from repo).
+  Downstream tasks supported: cell-type annotation, batch correction,
+  multi-omics integration, gene-network inference, perturbation prediction.
+size: |
+  Pretrained on a corpus of ~33,000,000 single cells assembled from CZ
+  CELLxGENE Census + other public datasets. Generative pre-trained
+  transformer architecture; multiple checkpoint sizes available.
+counts:
+  training_cells: 33000000
+last_updated: 2024
+citation:
+  - https://doi.org/10.1038/s41592-024-02201-0    # Nat Methods 2024
+related_resources:
+  - cellxgene_census
+  - uce
+  - geneformer
+  - transcriptformer
+notes: |
+  Among the most-cited single-cell foundation models. Strong fine-tuning
+  story; a known active community of derivative methods (scGPT + GNN for
+  drug response, scGPT for perturbation, etc.). Note non-commercial
+  license on the published checkpoints.
+last_verified: 2026-05-13
