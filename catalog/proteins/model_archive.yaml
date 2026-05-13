@@ -1,0 +1,46 @@
+name: ModelArchive
+short_id: model_archive
+url: https://www.modelarchive.org/
+provider: SIB Swiss Institute of Bioinformatics; Protein Model Portal community
+species:
+  - multi-species
+research_themes:
+  - protein_structure
+  - computational_modeling
+  - protein_complexes
+  - homology_modeling
+data_modalities:
+  - predicted_protein_structures
+  - protein_complex_models      # RoseTTAFold, AlphaFold-Multimer
+  - homology_models
+  - ab_initio_models
+  - validation_metadata
+access_mode:
+  - public_open
+access_details: |
+  Free, no registration. Models receive a unique "MA" prefix accession.
+    - Browser: https://www.modelarchive.org/
+    - Each entry has a stable DOI for citation.
+    - Surfaced through the 3D-Beacons network alongside AlphaFold DB.
+    - Predicted protein complexes (~1,100 from RoseTTAFold + AlphaFold-
+      Multimer) are also integrated into PDBe-KB and RCSB.org.
+size: |
+  Thousands of user-submitted predicted structures and complexes,
+  including ~1,106 protein complexes from RoseTTAFold + AlphaFold2 that
+  are co-distributed with the ~999,255 AlphaFold model-organism + Swiss-
+  Prot CSMs that RCSB.org surfaces.
+counts:
+  rosettafold_alphafold_complexes: 1106
+last_updated: 2026
+citation:
+  - https://doi.org/10.1038/nsmb.2839      # Protein Model Portal
+related_resources:
+  - alphafold_db
+  - esm_atlas
+  - pdb
+notes: |
+  The "anything not AlphaFold" home for predicted structures. Especially
+  useful for predicted COMPLEXES (which AFDB does not host) and for
+  models predating AlphaFold2 that still appear in the literature.
+  Discovery is most convenient via the 3D-Beacons unified API.
+last_verified: 2026-05-13

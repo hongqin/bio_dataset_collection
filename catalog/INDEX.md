@@ -112,13 +112,30 @@ first, then tiered, then controlled.
 
 ## Protein structures & cryo-EM
 
+### Experimental and integrative structures
+
 | Resource | Data | Access | File |
 |---|---|---|---|
 | [PDB / RCSB / wwPDB](https://www.rcsb.org/) | 227k experimental structures + 1M CSMs | public, CC0 | [`proteins/pdb.yaml`](proteins/pdb.yaml) |
+| [PDB-IHM](https://pdb-ihm.org/) | 382 integrative/hybrid models (formerly PDB-Dev) | public, CC0 | [`proteins/pdb_ihm.yaml`](proteins/pdb_ihm.yaml) |
+
+### Predicted structures
+
+| Resource | Data | Access | File |
+|---|---|---|---|
 | [AlphaFold DB](https://alphafold.ebi.ac.uk/) | ~261M predicted structures covering UniProt | public, CC-BY 4.0 | [`proteins/alphafold_db.yaml`](proteins/alphafold_db.yaml) |
 | [ESM Metagenomic Atlas](https://esmatlas.com/) | ~617M ESMFold predictions of metagenomic proteins | public, CC-BY 4.0 | [`proteins/esm_atlas.yaml`](proteins/esm_atlas.yaml) |
+| [ModelArchive](https://www.modelarchive.org/) | Non-AlphaFold predicted structures and complexes (RoseTTAFold, homology, ab initio) | public | [`proteins/model_archive.yaml`](proteins/model_archive.yaml) |
+
+### Cryo-EM and cryo-ET
+
+| Resource | Data | Access | File |
+|---|---|---|---|
 | [EMDB](https://www.ebi.ac.uk/emdb/) | 57k+ cryo-EM 3D reconstructions | public, CC0 | [`proteins/emdb.yaml`](proteins/emdb.yaml) |
 | [EMPIAR](https://www.ebi.ac.uk/empiar/) | 2,900 raw cryo-EM image datasets (8.5 PiB) | public, CC0 | [`proteins/empiar.yaml`](proteins/empiar.yaml) |
+| [CZ CryoET Data Portal](https://cryoetdataportal.czscience.com/) | >17,000 tomograms, 45 species, ML-ready annotations | public, CC-BY 4.0 | [`proteins/cryoet_data_portal.yaml`](proteins/cryoet_data_portal.yaml) |
+| [ETDB-Caltech](https://etdb.caltech.edu/) | >11,000 cellular cryo-ET datasets (Jensen Lab), 100+ microbial species | public | [`proteins/etdb_caltech.yaml`](proteins/etdb_caltech.yaml) |
+| [CryoBench](https://cryobench.cs.princeton.edu/) | 5 simulated benchmarks for heterogeneous reconstruction (NeurIPS 2024) | public, CC-BY | [`proteins/cryobench.yaml`](proteins/cryobench.yaml) |
 
 ---
 

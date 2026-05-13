@@ -1,0 +1,46 @@
+name: PDB-IHM (Integrative/Hybrid Models in PDB)
+short_id: pdb_ihm
+url: https://pdb-ihm.org/
+provider: wwPDB; NSF, DOE, NIH; Sali Lab (UCSF) and collaborators
+species:
+  - multi-species
+research_themes:
+  - structural_biology
+  - integrative_modeling
+  - protein_complexes
+  - hybrid_methods
+data_modalities:
+  - integrative_structures   # multi-source, multi-scale models
+  - multi_state_ensembles
+  - validation_reports
+  - ihmcif_files             # extended PDBx/mmCIF
+access_mode:
+  - public_open
+access_details: |
+  CC0; no registration. Unified with PDB in August 2024 — entries now
+  receive standard PDB accession codes (with an IHM prefix in the file).
+    - Browser: https://pdb-ihm.org/
+    - FTP: https://files.wwpdb.org/pub/pdb_ihm/
+    - Validation reports (summary + full) provided in PDF; models in
+      IHMCIF (extended PDBx/mmCIF).
+size: |
+  382 integrative-modeling entries as of January 2026 (growing — previously
+  hosted by PDB-Dev). Each entry typically integrates 2+ data sources
+  (e.g., cryo-EM + SAXS + crosslinking-MS) into a single multi-scale
+  structural model.
+counts:
+  entries: 382
+last_updated: 2026-01
+citation:
+  - https://doi.org/10.1038/s41594-024-01380-w    # IHMCIF, NSMB 2024
+related_resources:
+  - pdb
+  - emdb
+  - alphafold_db
+notes: |
+  Use PDB-IHM when modeling is multi-method or multi-state (e.g.,
+  nuclear pore complex, transcription pre-initiation complex, large
+  protein machines). The companion IHMCIF data standard supports
+  multi-scale (atomistic + bead) and ensemble representations that
+  standard PDBx/mmCIF cannot.
+last_verified: 2026-05-13

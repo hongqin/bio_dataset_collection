@@ -1,0 +1,48 @@
+name: CZ CryoET Data Portal
+short_id: cryoet_data_portal
+url: https://cryoetdataportal.czscience.com/
+provider: Chan Zuckerberg Institute for Advanced Biological Imaging; Chan Zuckerberg Initiative Foundation
+species:
+  - multi-species
+research_themes:
+  - cryo_electron_tomography
+  - cellular_structural_biology
+  - in_situ_structural_biology
+  - method_development
+  - machine_learning_benchmarks
+data_modalities:
+  - tomograms                # 3D reconstructions
+  - tilt_series              # raw + motion-corrected
+  - annotations              # particle picks, membranes, organelles
+  - segmentations
+  - metadata                 # acquisition params, sample, software
+access_mode:
+  - public_open
+access_details: |
+  Fully open; CC-BY 4.0.
+    - Portal: https://cryoetdataportal.czscience.com/
+    - AWS Open Data: https://registry.opendata.aws/cryoet-data-portal/
+    - Python client + REST API; Napari plugin.
+    - Standardized metadata schema for reproducible re-processing.
+size: |
+  >17,000 tomograms from 45 species; >60,000 annotations (membrane proteins,
+  ribosomes, viral capsids, etc.). Growing rapidly: ~13,000 of those
+  tomograms had ML-derived membrane-protein annotations added in a
+  3.5-day large-scale annotation push in 2024.
+counts:
+  tomograms: 17000
+  annotations: 60000
+  species: 45
+last_updated: 2026
+citation:
+  - https://doi.org/10.1038/s41592-024-02477-2     # Nat Methods 2024
+related_resources:
+  - empiar
+  - emdb
+  - etdb_caltech
+notes: |
+  Where EMPIAR archives raw images from completed studies, the CZ portal
+  focuses on STANDARDIZED tomograms + community-derived annotations
+  designed for ML training. Hosts the CZII CryoET Object Identification
+  benchmark used in the 2024 Kaggle particle-picking competition.
+last_verified: 2026-05-13

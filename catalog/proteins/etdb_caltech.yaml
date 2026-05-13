@@ -1,0 +1,46 @@
+name: Electron Tomography Database (ETDB-Caltech)
+short_id: etdb_caltech
+url: https://etdb.caltech.edu/
+provider: Jensen Lab, California Institute of Technology (HHMI)
+species:
+  - multi-species
+research_themes:
+  - cryo_electron_tomography
+  - microbiology
+  - cellular_ultrastructure
+  - in_situ_structural_biology
+data_modalities:
+  - tomograms                # cryo-ET of cells / cell sections
+  - tilt_series
+  - segmentations
+  - metadata
+access_mode:
+  - public_open
+access_details: |
+  Free and open; no registration.
+    - Web portal: https://etdb.caltech.edu/
+    - Distributed via a blockchain-based ledger + peer-to-peer file
+      sharing (Jensen Lab's server is currently the only node).
+  Most data come from in-situ cryo-ET of intact bacterial / archaeal /
+  small eukaryotic cells.
+size: |
+  >11,000 datasets across >30 TB; >100 unique species of bacteria,
+  archaea, and small eukaryotes — one of the largest single sources of
+  in-situ cellular cryo-ET data.
+counts:
+  datasets: 11000
+  species: 100
+  storage_tb: 30
+last_updated: 2024
+citation:
+  - https://doi.org/10.1371/journal.pone.0215531    # PLOS ONE 2019
+related_resources:
+  - empiar
+  - cryoet_data_portal
+notes: |
+  Particularly strong for bacterial cell biology — flagella, secretion
+  systems, chemoreceptor arrays, cell-wall ultrastructure — that produced
+  Grant Jensen's "Atlas of Bacterial and Archaeal Cell Structure"
+  illustrations. Complements [[empiar]] (general raw-image archive)
+  with deep coverage of microbial ultrastructure.
+last_verified: 2026-05-13

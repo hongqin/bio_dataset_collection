@@ -1,0 +1,47 @@
+name: CryoBench
+short_id: cryobench
+url: https://cryobench.cs.princeton.edu/
+provider: Princeton ML for Structural Biology Lab (Zhong, Davis)
+species:
+  - multi-species              # designed/simulated targets
+research_themes:
+  - cryo_em
+  - machine_learning_benchmarks
+  - heterogeneity
+  - method_development
+data_modalities:
+  - simulated_cryo_em_particles
+  - conformational_ensembles    # designed motions + MD-sampled
+  - compositional_mixtures      # ribosome assembly, ~100 cellular complexes
+  - ground_truth_structures
+access_mode:
+  - public_open
+access_details: |
+  Open under CC-BY (per Zenodo records).
+    - Project page: https://cryobench.cs.princeton.edu/
+    - Datasets on Zenodo:
+        - Conf-het (IgG-1D, IgG-RL): https://zenodo.org/records/11629428
+        - Comp-het (Ribosembly, Tomotwin-100): https://zenodo.org/records/12528292
+    - Tools + evaluation code on GitHub: ml-struct-bio/CryoBench
+size: |
+  5 benchmark datasets covering different sources of heterogeneity:
+    - 2 conformational (IgG-1D, IgG-RL): designed/MD-sampled motions
+    - 2 compositional (Ribosembly, Tomotwin-100): ribosome assembly
+      states + 100 common cellular complexes
+    - Standardized metrics + leaderboards for heterogeneous reconstruction
+  Each dataset contains tens to hundreds of thousands of simulated
+  particle images with known ground truth.
+counts:
+  datasets: 5
+last_updated: 2024
+citation:
+  - https://doi.org/10.48550/arXiv.2408.05526    # CryoBench NeurIPS 2024
+related_resources:
+  - empiar
+  - cryoet_data_portal
+notes: |
+  Synthetic/simulated benchmarks designed to evaluate heterogeneous
+  reconstruction methods (cryoDRGN, RECOVAR, 3DFlex, DRGN-AI). Use
+  CryoBench for METHOD comparison and ML training; use EMPIAR for
+  experimental data and EMDB for finalized real-world maps.
+last_verified: 2026-05-13
