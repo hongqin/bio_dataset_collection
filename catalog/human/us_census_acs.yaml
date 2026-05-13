@@ -1,0 +1,48 @@
+name: US Census Bureau — Decennial Census, ACS, and Health-Related APIs
+short_id: us_census_acs
+url: https://www.census.gov/data/developers.html
+provider: US Census Bureau (Department of Commerce)
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - demography
+  - social_determinants_of_health
+  - health_equity
+  - population_denominators
+  - geographic_epidemiology
+data_modalities:
+  - aggregate_tabulations    # tract / block group / county / state
+  - microdata                # ACS PUMS (~67% sample), DHC, decennial PUMS
+  - geocoding                # TIGER/Line shapefiles, geocoder API
+  - income_education_occupation
+  - health_insurance_coverage  # ACS HI questions since 2008; SAHIE small-area
+access_mode:
+  - public_open
+  - registration_required    # API key (free, instant)
+access_details: |
+  Almost all Census data are public, with API access requiring a free key.
+    - Developer portal: https://www.census.gov/data/developers.html
+    - data.census.gov interactive query interface.
+    - ACS 5-year and 1-year API endpoints; PUMS microdata via FTP and IPUMS.
+    - TIGER/Line shapefiles: https://www.census.gov/geographies/mapping-files.html
+    - SAHIE (Small Area Health Insurance Estimates) API.
+  Restricted-access detailed microdata: through Federal Statistical Research
+  Data Centers (FSRDCs) with project review, typically used for linked
+  administrative records (e.g., SSA, IRS, NCHS).
+size: ~330M US residents (Decennial); ~3.5M annual ACS housing units sampled
+last_updated: 2026
+citation: []
+related_resources:
+  - brfss
+  - nchs_linked_mortality
+notes: |
+  Not a biomedical resource by itself, but the canonical source of:
+    - population denominators for rate calculations,
+    - SDOH covariates (income, education, language, housing) at tract level,
+    - geocoding utilities (TIGER, Census Geocoder),
+    - small-area health insurance coverage estimates.
+  IPUMS USA (https://usa.ipums.org/usa/) is a widely used third-party host
+  with harmonized variables across years.
+last_verified: 2026-05-13

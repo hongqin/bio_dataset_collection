@@ -1,0 +1,42 @@
+name: NCHS Linked Mortality Files (LMF) — NHIS, NHANES → National Death Index
+short_id: nchs_linked_mortality
+url: https://www.cdc.gov/nchs/data-linkage/mortality.htm
+provider: CDC NCHS Data Linkage Program
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - epidemiology
+  - mortality
+  - survival_analysis
+  - longitudinal_followup
+data_modalities:
+  - linked_survival_data
+  - cause_of_death_ICD
+  - survey_baseline       # via the parent NHIS / NHANES file
+access_mode:
+  - tiered
+  - public_open               # public-use LMF (adults only, limited vars)
+  - controlled_access_dac     # restricted-use LMF via NCHS RDC
+access_details: |
+  Two tiers:
+    1. PUBLIC-USE LMF — adult participants only, limited mortality variables
+       (vital status, follow-up time, broad cause categories). Available for
+       NHIS 1986–2018, NHANES 1999–2018, NHANES III. Free download.
+       https://www.cdc.gov/nchs/data-linkage/mortality-public.htm
+    2. RESTRICTED-USE LMF — adults + children, full mortality detail, exact
+       dates, fine ICD codes. Access only through the NCHS Research Data
+       Center (RDC) with project review (~4–6 weeks).
+size: Linkage covers tens of millions of survey records to National Death Index
+last_updated: 2024     # 2019 LMF release
+citation: []
+related_resources:
+  - nhanes
+  - cdc_wonder
+notes: |
+  The public-use LMF is one of the few open prospective US cohort resources
+  with linked mortality outcomes — strong choice for survival analysis on
+  NHIS/NHANES exposures. Use the restricted-use file when you need
+  pediatric outcomes or specific causes of death.
+last_verified: 2026-05-13

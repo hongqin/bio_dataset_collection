@@ -1,0 +1,51 @@
+name: National Health and Nutrition Examination Survey (NHANES)
+short_id: nhanes
+url: https://www.cdc.gov/nchs/nhanes/
+provider: CDC National Center for Health Statistics (NCHS)
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - clinical_ehr
+  - nutrition
+  - environmental_exposure
+  - epidemiology
+  - genomics
+  - exposome
+data_modalities:
+  - survey                # questionnaires
+  - physical_measurements # exams (BP, anthropometry, dexa, vision, dental)
+  - lab_measurements      # blood/urine analytes incl. heavy metals, lipids
+  - dietary_recall
+  - genotyping            # NHANES III Phase II + 1999–2012 DNA specimens (restricted)
+  - biospecimens
+access_mode:
+  - tiered
+  - public_open               # survey + lab data
+  - controlled_access_dac     # DNA-derived genetic data, linkages
+  - irb_required              # for some RDC projects
+access_details: |
+  Two tiers:
+    1. OPEN — questionnaires, exam data, dietary recalls, and most laboratory
+       measurements are freely downloadable as SAS XPT / ASCII per cycle:
+       https://wwwn.cdc.gov/nchs/nhanes/
+    2. CONTROLLED — DNA specimens and most genotype/exposome variables are
+       restricted. Researchers submit a proposal via the NCHS Research Data
+       Center (RDC); fees apply for new genotyping; some anonymized genetic
+       datasets are released under DUA without RDC access.
+       Contact: NHANESGenetics@CDC.gov, RDCA@cdc.gov
+size: ~5,000 participants/year since 1999; DNA from 5 cycles between 1991 and 2012
+last_updated: 2024
+citation:
+  - https://doi.org/10.1038/sdata.2016.96   # NHANES exposome/phenome, Sci Data 2016
+related_resources:
+  - cdc_wonder
+  - brfss
+  - nchs_linked_mortality
+notes: |
+  Nationally representative, multi-stage probability sample of the US
+  civilian non-institutionalized population. Rich combination of
+  genotype + phenotype + environmental exposure for US adults and children.
+  For the genetic-data tier, expect months of review.
+last_verified: 2026-05-13

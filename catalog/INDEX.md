@@ -32,8 +32,18 @@ first, then tiered, then controlled.
 |---|---|---|---|
 | [GTEx](https://www.gtexportal.org/) | expression matrices, eQTLs/sQTLs across 54 tissues | individual genotypes + RNA-seq BAMs via dbGaP | [`human/gtex.yaml`](human/gtex.yaml) |
 | [FinnGen](https://www.finngen.fi/) | GWAS summary stats (form-gated, no DAC) for ~500k Finns | individual-level via Finnish biobanks | [`human/finngen.yaml`](human/finngen.yaml) |
+| [NHANES](https://www.cdc.gov/nchs/nhanes/) | surveys, exam, dietary, lab measurements (open) | DNA specimens + genotype data via NCHS RDC | [`human/nhanes.yaml`](human/nhanes.yaml) |
+| [NCHS Linked Mortality Files](https://www.cdc.gov/nchs/data-linkage/mortality.htm) | adult public-use LMF (NHIS/NHANES → NDI) | restricted-use LMF (adults + kids, full ICD) via RDC | [`human/nchs_linked_mortality.yaml`](human/nchs_linked_mortality.yaml) |
 | [Mexico City Prospective Study](https://mcps-epcm.org/study.html) | variant browser ([RGC-MCPS](https://rgc-mcps.regeneron.com)) | WGS/WES/genotyping + EHR on DNAnexus, DAC review | [`human/mcps.yaml`](human/mcps.yaml) |
 | [All of Us](https://www.researchallofus.org/) | Data Browser aggregates (no registration) | WGS + EHR + wearable on Researcher Workbench, DUA + IRB-style training | [`human/all_of_us.yaml`](human/all_of_us.yaml) |
+
+### Population health & surveillance (US, fully public)
+
+| Resource | Data | Themes | File |
+|---|---|---|---|
+| [CDC WONDER](https://wonder.cdc.gov/) | aggregate mortality, natality, cancer incidence, infectious disease, environmental | epidemiology, mortality, population health | [`human/cdc_wonder.yaml`](human/cdc_wonder.yaml) |
+| [BRFSS](https://www.cdc.gov/brfss/) | 400k+ annual telephone interviews, state-level chronic disease + behavior | behavioral health, chronic disease, health equity | [`human/brfss.yaml`](human/brfss.yaml) |
+| [US Census Bureau / ACS](https://www.census.gov/data/developers.html) | decennial + ACS tabulations + PUMS microdata + TIGER/Line + SAHIE | demography, SDOH, population denominators | [`human/us_census_acs.yaml`](human/us_census_acs.yaml) |
 
 ---
 

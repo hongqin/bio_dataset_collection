@@ -1,0 +1,43 @@
+name: Behavioral Risk Factor Surveillance System (BRFSS)
+short_id: brfss
+url: https://www.cdc.gov/brfss/
+provider: CDC; US state and territorial health departments
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - epidemiology
+  - chronic_disease
+  - behavioral_health
+  - health_equity
+  - public_health
+data_modalities:
+  - survey                # telephone interviews
+  - health_behaviors
+  - chronic_condition_self_report
+  - health_care_access
+  - geographic_metadata   # state, MMSA-level
+access_mode:
+  - public_open
+access_details: |
+  Annual public-use data files released each year, no registration.
+    - Annual data: https://www.cdc.gov/brfss/annual_data/annual_data.htm
+    - Formats: ASCII (zipped), SAS XPT (importable into SPSS/Stata/R).
+    - Prevalence-and-trends interactive tool:
+      https://www.cdc.gov/brfss/brfssprevalence/index.html
+    - SMART (Selected Metropolitan/Micropolitan Area Risk Trends) for
+      sub-state estimates.
+size: >400,000 adult interviews per year; largest continuous health survey worldwide
+last_updated: 2024
+citation:
+  - https://www.ncbi.nlm.nih.gov/books/NBK553031/   # StatPearls overview
+related_resources:
+  - nhanes
+  - cdc_wonder
+notes: |
+  Self-reported telephone survey — no biospecimens, no genotype data —
+  but unmatched for state-level behavioral, chronic-disease, and SDOH
+  trends. Often paired with NHANES (objective measures) and ACS (population
+  denominators) for health-disparities research.
+last_verified: 2026-05-13

@@ -1,0 +1,44 @@
+name: CDC WONDER
+short_id: cdc_wonder
+url: https://wonder.cdc.gov/
+provider: CDC National Center for Health Statistics (NCHS)
+species:
+  - Homo sapiens
+taxonomy_ids:
+  - 9606
+research_themes:
+  - epidemiology
+  - mortality
+  - population_health
+  - public_health
+data_modalities:
+  - mortality_aggregates    # underlying + multiple cause of death
+  - natality
+  - cancer_incidence        # USCS, jointly with NCI
+  - infectious_disease
+  - population_denominators
+  - environmental_health    # AQS air quality, climate exposure
+access_mode:
+  - public_open
+access_details: |
+  Free web query system; no registration.
+    - Web UI: https://wonder.cdc.gov/
+    - Programmatic XML API for most datasets (rate-limited).
+    - Suppression rules: cells with <10 deaths or sub-county detail can be
+      suppressed for privacy; users agree to data-use restrictions
+      (no re-identification) on each query.
+  Datasets include: Underlying Cause of Death (1999+), Multiple Cause of
+  Death, Compressed Mortality (1968–2016), Natality, Cancer Incidence (USCS),
+  Provisional Mortality (Vital Statistics Rapid Release), STD surveillance,
+  TB, Measles, AIDS Public Information Dataset, AQS, NORS.
+size: All US deaths since 1968; tens of millions of records
+last_updated: 2026     # provisional updated weekly
+citation: []
+related_resources:
+  - nhanes
+  - nchs_linked_mortality
+notes: |
+  Aggregate-only — no individual records. For individual-record death-cert
+  research (full ICD detail, exact dates, smaller geographies), use the
+  NCHS Restricted-Use Vital Statistics files via the RDC.
+last_verified: 2026-05-13
